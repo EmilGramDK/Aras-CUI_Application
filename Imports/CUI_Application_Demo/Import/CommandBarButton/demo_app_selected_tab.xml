@@ -1,0 +1,9 @@
+﻿<AML>
+ <Item type="CommandBarButton" id="742E0CE4ABAC4949B57A557F51B207AA" action="add">
+  <additional_data>{
+"type":"text"
+}</additional_data>
+  <label xml:lang="en">Selected Tab: </label>
+  <name>demo_app_selected_tab</name>
+ </Item>
+</AML>

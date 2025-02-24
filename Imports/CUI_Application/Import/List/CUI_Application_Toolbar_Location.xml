@@ -1,0 +1,21 @@
+﻿<AML>
+ <Item type="List" id="0040A39B821643979C9AF718E78320ED" action="add">
+  <name>CUI_Application_Toolbar_Location</name>
+  <Relationships>
+   <Item type="Value" id="BAD97AD9CCA14B1097DFF795C79513DA" action="add">
+    <inactive>0</inactive>
+    <label xml:lang="en">Commandbar</label>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application_Toolbar_Location" type="List">0040A39B821643979C9AF718E78320ED</source_id>
+    <value>commandbar</value>
+   </Item>
+   <Item type="Value" id="202D2A1CFB9A4F33953A79B79702FE6D" action="add">
+    <inactive>0</inactive>
+    <label xml:lang="en">Titlebar</label>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="CUI_Application_Toolbar_Location" type="List">0040A39B821643979C9AF718E78320ED</source_id>
+    <value>titlebar</value>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

@@ -1,0 +1,11 @@
+<resources>
+	<resource key="Innovator.URL" value="Server URL (https//aras.example.com/InnovatorServer/)" />
+	<resource key="Innovator.DB" value="Select Database" />
+	<resource key="Innovator.Username" value="Username" />
+	<resource key="Innovator.Password" value="Password" />
+	<resource key="Innovator.Dir" value="Install Path (Default: C:\Program Files (x86)\Aras\Innovator\Innovator)" />
+	<resource key="Vault.Dir" value="Vault Server Path" />
+	<resource key="Coversion.Dir" value="Conversion Server Path" />
+	<resource key="Db.Username" value="Database Username" />
+	<resource key="Db.Password" value="Database Password" />
+</resources>

@@ -1,0 +1,34 @@
+﻿<AML>
+ <Item type="Permission" id="F8C271F7FC094E67A1049D6B12190C30" action="add">
+  <is_private>0</is_private>
+  <name>CUI_Application</name>
+  <Relationships>
+   <Item type="Access" id="222BB7B8D60D44EA9744CA5A7A5068C4" action="add">
+    <can_change_access>1</can_change_access>
+    <can_delete>1</can_delete>
+    <can_discover>1</can_discover>
+    <can_get>1</can_get>
+    <can_update>1</can_update>
+    <related_id keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</related_id>
+    <show_permissions_warning>1</show_permissions_warning>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application" type="Permission">F8C271F7FC094E67A1049D6B12190C30</source_id>
+   </Item>
+   <Item type="Access" id="88D6F3B1CFF24C5DB590EAE427F857E5" action="add">
+    <can_change_access>0</can_change_access>
+    <can_delete>0</can_delete>
+    <can_discover>1</can_discover>
+    <can_get>1</can_get>
+    <can_update>0</can_update>
+    <related_id keyed_name="Owner" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>Owner</name>
+     </Item>
+    </related_id>
+    <show_permissions_warning>0</show_permissions_warning>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="CUI_Application" type="Permission">F8C271F7FC094E67A1049D6B12190C30</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

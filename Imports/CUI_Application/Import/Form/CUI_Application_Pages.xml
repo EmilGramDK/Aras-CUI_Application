@@ -1,0 +1,21 @@
+﻿<AML>
+ <Item type="Form" id="398E7CCF6EEC46699D4C5DCC2FF1982B" action="add">
+  <classification>Responsive</classification>
+  <height>234</height>
+  <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
+  <width>699</width>
+  <name>CUI_Application_Pages</name>
+  <Relationships>
+   <Item type="Body" id="51A60E40977E437993D1CCE8C0F299F9" action="add">
+    <bg_color>#FFFFFF</bg_color>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application_Pages" type="Form">398E7CCF6EEC46699D4C5DCC2FF1982B</source_id>
+   </Item>
+   <Item type="FormComposite" id="46E42AA9BB344EC0B1080DF0ABC773F6" action="add">
+    <related_id keyed_name="CUI_Application_Pages" type="cui_WindowSection">31C0171C33F941C9B7642FCB71DF9B78</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application_Pages" type="Form">398E7CCF6EEC46699D4C5DCC2FF1982B</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

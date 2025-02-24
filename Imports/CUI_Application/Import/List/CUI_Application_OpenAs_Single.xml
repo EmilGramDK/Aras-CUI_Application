@@ -1,0 +1,35 @@
+﻿<AML>
+ <Item type="List" id="36C7B3705EBA4B52ABD8B7CEF660BF4A" action="add">
+  <name>CUI_Application_OpenAs_Single</name>
+  <Relationships>
+   <Item type="Value" id="000552F26D954A7F81716870262FFE7D" action="add">
+    <inactive>0</inactive>
+    <label xml:lang="en">Aras Tab</label>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application_OpenAs_Single" type="List">36C7B3705EBA4B52ABD8B7CEF660BF4A</source_id>
+    <value>arastab</value>
+   </Item>
+   <Item type="Value" id="3C1DCE209EC6415DA7BAD991BC8EE8A8" action="add">
+    <inactive>0</inactive>
+    <label xml:lang="en">Browser Tab</label>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="CUI_Application_OpenAs_Single" type="List">36C7B3705EBA4B52ABD8B7CEF660BF4A</source_id>
+    <value>browsertab</value>
+   </Item>
+   <Item type="Value" id="784906498DD74AB7ACEA9223E374BE1A" action="add">
+    <inactive>0</inactive>
+    <label xml:lang="en">Aras Dialog</label>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="CUI_Application_OpenAs_Single" type="List">36C7B3705EBA4B52ABD8B7CEF660BF4A</source_id>
+    <value>dialog</value>
+   </Item>
+   <Item type="Value" id="863B49C27AA142259C8FA1629CFD6B50" action="add">
+    <inactive>0</inactive>
+    <label xml:lang="en">Browser Window</label>
+    <sort_order>512</sort_order>
+    <source_id keyed_name="CUI_Application_OpenAs_Single" type="List">36C7B3705EBA4B52ABD8B7CEF660BF4A</source_id>
+    <value>window</value>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

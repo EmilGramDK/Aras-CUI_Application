@@ -1,0 +1,11 @@
+﻿<AML>
+ <Item type="CommandBarButton" id="3DC3FE2506434276A83BA498DC270CF4" action="add">
+  <additional_data>{
+"cssStyle": "background:var(--item-type-color);color:#ffffff;font-size:12px;font-weight:600;padding: 1px 5px;",
+"right":true
+}</additional_data>
+  <label xml:lang="en">Select Hidden Tab</label>
+  <on_click_handler keyed_name="CUI_Application_DemoAppBtnClick" type="Method">CB12EE4D43A348A198230831579171AD</on_click_handler>
+  <name>demo_app_select_hidden</name>
+ </Item>
+</AML>

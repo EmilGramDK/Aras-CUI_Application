@@ -1,0 +1,74 @@
+/**
+/** Cui Application ItemView Styles
+/** Adds styling to the application item view of Aras Innovator
+/**/
+
+body {
+  color: #374151;
+}
+
+.cui_app-hidden {
+  display: none !important;
+}
+
+.aras-titlebar .aras-toolbar__item.aras-toolbar__title {
+  margin-left: 8px !important;
+}
+
+.aras-item-view__content {
+  padding: 3px;
+  padding-top: 1px;
+  padding-left: 12px;
+}
+
+.aras-switcher {
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%), 0 1px 3px rgb(0 0 0 / 24%);
+  background: white;
+}
+
+.aras-switcher-pane {
+  width: 100%;
+  height: 100%;
+}
+
+.aras-switcher-pane:not(.aras-switcher-pane_active) {
+  overflow: hidden;
+}
+
+.aras-switcher-pane_border_none {
+  border: 0;
+}
+
+.aras-item-view__viewers {
+  overflow: hidden;
+}
+
+/* .aras-item-view__viewers-tabs.aras-tabs_b {
+  width: 3rem !important;
+} */
+.aras-item-view__viewers-tabs.aras-tabs_b .aras-tabs__tab {
+  padding: 5px !important;
+}
+.aras-item-view__viewers-tabs.aras-tabs_b .aras-tabs__tab aras-image {
+  width: 22px !important;
+  height: 22px !important;
+  box-sizing: border-box;
+}
+.aras-item-view__viewers-tabs.aras-tabs_b .aras-tabs__tab.aras-tabs__tab_active,
+.aras-viewers-tabs .aras-tabs__tab:not(.aras-tabs__tab_active):hover {
+  background: var(--item-type-active-color) !important;
+}
+
+/* .aras-tabs__tab.aras-tabs__tab_active::before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 16px solid var(--item-type-color);
+  border-radius: 2px;
+  opacity: 0.75;
+} */

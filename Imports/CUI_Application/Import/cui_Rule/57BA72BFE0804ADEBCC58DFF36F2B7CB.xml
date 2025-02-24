@@ -1,0 +1,9 @@
+﻿<AML>
+ <Item type="cui_Rule" id="57BA72BFE0804ADEBCC58DFF36F2B7CB" action="add">
+  <behavior_text>{"Property":{"open_as_single":{"hidden":false,"readonly":false}}}</behavior_text>
+  <behavior_type>display</behavior_type>
+  <condition_text>[{"id":"A9929D07FD1E4EF186BCE7A93811BEBC","function":"value_of_property","property":"classification","operator":"is","criteria":"Single Page"}]</condition_text>
+  <condition_type>property</condition_type>
+  <name>Single Page</name>
+ </Item>
+</AML>
