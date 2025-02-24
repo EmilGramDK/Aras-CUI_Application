@@ -2,7 +2,7 @@
  <Item type="Method" id="60C480D8C49E485AB5CCCD8B2A97E4EA" action="add">
   <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
   <method_code><![CDATA[/**
- * CUI_Application Aras Solution V1.0.1
+ * CUI_Application Aras Solution V1.0.2
  * More Info: https://github.com/emilgramdk/Aras-CUI-Application
  *
  * Method: CUI_Application_Sidebar_BtnInit
@@ -75,14 +75,14 @@ function initScriptsAndStyles() {
   if (["pending", "resolved"].includes(window.CuiAppSidebarStatus)) return;
 
   const mainViewStyles = document.createElement("link");
-  mainViewStyles.href = "../Solutions/CUI_Application/styles/mainView.css?v=1.0.1";
+  mainViewStyles.href = "../Solutions/CUI_Application/styles/mainView.css?v=1.0.2";
   mainViewStyles.rel = "stylesheet";
   mainViewStyles.id = "cui-app-mainview-styles";
   document.head.appendChild(mainViewStyles);
 
   const mainViewScript = document.createElement("script");
   mainViewScript.type = "module";
-  mainViewScript.src = "../Solutions/CUI_Application/Scripts/mainView.js?v=1.0.1";
+  mainViewScript.src = "../Solutions/CUI_Application/Scripts/mainView.js?v=1.0.2";
   mainViewScript.id = "cui-app-mainview-script";
   document.head.appendChild(mainViewScript);
 }

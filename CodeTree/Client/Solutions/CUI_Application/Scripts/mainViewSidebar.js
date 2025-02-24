@@ -1,5 +1,5 @@
 /**
- * CUI_Application Aras Solution V1.0.1
+ * CUI_Application Aras Solution V1.0.2
  * More Info: https://github.com/EmilGramDK/Aras-CUI_Application
  *
  * Class:         CuiAppMainViewSidebar

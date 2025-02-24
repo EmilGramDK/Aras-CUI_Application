@@ -1,5 +1,5 @@
 /**
- * CUI_Application Aras Solution V1.0.1
+ * CUI_Application Aras Solution V1.0.2
  * More Info: https://github.com/EmilGramDK/Aras-CUI_Application
  *
  * Class:         CuiAppLayout
@@ -52,7 +52,7 @@ class CuiAppLayout extends CuiLayout {
   #updateTitleTab() {
     top?.window.arasTabs.updateTitleTab(window.name, {
       label: this.appItem.tab_label || this.appItem.name,
-      image: this.appItem.icon || "../Solutions/CUI_Application/images/default_icon.svg?v=1.0.1",
+      image: this.appItem.icon || "../Solutions/CUI_Application/images/default_icon.svg?v=1.0.2",
     });
   }
 
@@ -144,7 +144,7 @@ class CuiAppLayout extends CuiLayout {
       CommandBarItems: [
         {
           name: "appview.titlebar.appicon",
-          image: this.appItem.icon || "../Solutions/CUI_Application/images/default_icon.svg?v=1.0.1",
+          image: this.appItem.icon || "../Solutions/CUI_Application/images/default_icon.svg?v=1.0.2",
           type: "image",
           cssClass: "aras-toolbar__icon",
           tooltip_template: this.appItem.name,
@@ -193,7 +193,7 @@ class CuiAppLayout extends CuiLayout {
       name: page.name,
       tooltip_template: page.label,
       label: page.label,
-      image: page.icon || "../Solutions/CUI_Application/images/default_tab.svg?v=1.0.1",
+      image: page.icon || "../Solutions/CUI_Application/images/default_tab.svg?v=1.0.2",
       sort_order: page.sort_order || 0,
       cssClass: page.is_hidden === "1" ? "cui_app-hidden" : "",
     }));
@@ -258,7 +258,7 @@ class CuiAppLayout extends CuiLayout {
       : [
           {
             name: "demo_page",
-            page_url: "../Solutions/CUI_Application/html/demo.html?v=1.0.1",
+            page_url: "../Solutions/CUI_Application/html/demo.html?v=1.0.2",
             is_default: "1",
             label: "Demo Page",
           },
@@ -282,7 +282,7 @@ class CuiAppLayout extends CuiLayout {
   #appendCssToIframe(iframe) {
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = window.aras.getBaseURL("/Solutions/CUI_Application/styles/itemPage.css?v=1.0.1");
+    link.href = window.aras.getBaseURL("/Solutions/CUI_Application/styles/itemPage.css?v=1.0.2");
     iframe.addEventListener("load", () => {
       iframe.contentDocument?.head.prepend(link);
     });
