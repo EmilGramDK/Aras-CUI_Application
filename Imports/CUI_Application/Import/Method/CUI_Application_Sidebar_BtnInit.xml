@@ -75,14 +75,14 @@ function initScriptsAndStyles() {
   if (["pending", "resolved"].includes(window.CuiAppSidebarStatus)) return;
 
   const mainViewStyles = document.createElement("link");
-  mainViewStyles.href = "../Solutions/CUI_Application/styles/mainView.css?v=48";
+  mainViewStyles.href = "../Solutions/CUI_Application/styles/mainView.css?v=1.0.1";
   mainViewStyles.rel = "stylesheet";
   mainViewStyles.id = "cui-app-mainview-styles";
   document.head.appendChild(mainViewStyles);
 
   const mainViewScript = document.createElement("script");
   mainViewScript.type = "module";
-  mainViewScript.src = "../Solutions/CUI_Application/Scripts/mainView.js?v=46";
+  mainViewScript.src = "../Solutions/CUI_Application/Scripts/mainView.js?v=1.0.1";
   mainViewScript.id = "cui-app-mainview-script";
   document.head.appendChild(mainViewScript);
 }
