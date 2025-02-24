@@ -40,6 +40,26 @@
     <track_history>0</track_history>
     <name>active_color</name>
    </Item>
+   <Item type="Property" id="0E0CA2CFD7714CA6A038FAF74861A63E" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>integer</data_type>
+    <default_value xml:lang="en">100</default_value>
+    <is_federated>0</is_federated>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <label xml:lang="en">Order</label>
+    <order_by>0</order_by>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>100</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <track_history>0</track_history>
+    <name>app_order</name>
+   </Item>
    <Item type="Property" id="9B458EA193654709AE75F9A218D217F3" action="add">
     <column_alignment>left</column_alignment>
     <data_type>color</data_type>
@@ -394,25 +414,6 @@
     <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
     <track_history>0</track_history>
     <name>owned_by_id</name>
-   </Item>
-   <Item type="Property" action="edit" where="source_id='772CE3BCA6B54634AF93EB25828EC350' and name='sort_order'">
-    <column_alignment>left</column_alignment>
-    <data_type>integer</data_type>
-    <is_federated>0</is_federated>
-    <is_hidden>0</is_hidden>
-    <is_hidden2>0</is_hidden2>
-    <is_indexed>0</is_indexed>
-    <is_keyed>0</is_keyed>
-    <is_multi_valued>0</is_multi_valued>
-    <is_required>0</is_required>
-    <label xml:lang="en">Order</label>
-    <order_by>0</order_by>
-    <range_inclusive>0</range_inclusive>
-    <readonly>0</readonly>
-    <sort_order>100</sort_order>
-    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
-    <track_history>0</track_history>
-    <name>sort_order</name>
    </Item>
   </Relationships>
  </Item>

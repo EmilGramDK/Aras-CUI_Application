@@ -8,7 +8,7 @@
   <owned_by_id keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</owned_by_id>
   <page_url>https://example.com</page_url>
   <show_sidebar>1</show_sidebar>
-  <sort_order>99999</sort_order>
+  <app_order>99999</app_order>
   <url_slug>external</url_slug>
   <name>External Example</name>
  </Item>
