@@ -1,0 +1,4 @@
+<imports>
+  <package name="CUI_Application" path="CUI_Application\Import" />
+  <package name="CUI_Application_Demo" path="CUI_Application_Demo\Import" />
+</imports>

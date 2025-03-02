@@ -1,0 +1,329 @@
+﻿<AML>
+ <Item type="cui_Control" id="F1DB84EC6BD1475B9264D5C0E4027F75" action="add">
+  <additional_data>{"layout":{"Column Set 5":{"type":"columnSet","name":"Column Set 5","children":["Column 17","Column 18","Column 19"],"wrapped":true},"Column 17":{"type":"column","name":"Column 17","children":["name"],"ratio":"1","minWidth":72},"Column 18":{"type":"column","name":"Column 18","children":["description"],"ratio":"2","minWidth":72},"Column 19":{"type":"column","name":"Column 19","children":["tab_label"],"ratio":1,"minWidth":72},"Column Set 11":{"type":"columnSet","name":"Column Set 11","children":["Column 36","Column 37","Column 38","Column 39"],"wrapped":true},"Column 36":{"type":"column","name":"Column 36","children":["classification"],"ratio":"2","minWidth":72},"Column 37":{"type":"column","name":"Column 37","children":["url_slug"],"ratio":"2","minWidth":72},"Column 38":{"type":"column","name":"Column 38","children":["owned_by_id"],"ratio":"2","minWidth":72},"Column 39":{"type":"column","name":"Column 39","children":["app_order"],"ratio":1,"minWidth":72},"Column Set 12":{"type":"columnSet","name":"Column Set 12","children":["Column 40","Column 41","Column 42","Column 43"],"wrapped":true},"Column 40":{"type":"column","name":"Column 40","children":["color"],"ratio":1,"minWidth":72},"Column 41":{"type":"column","name":"Column 41","children":["active_color"],"ratio":1,"minWidth":72},"Column 42":{"type":"column","name":"Column 42","children":["icon"],"ratio":"4","minWidth":72},"Column 43":{"type":"column","name":"Column 43","children":["init_method"],"ratio":"2","minWidth":72},"Column Set 13":{"type":"columnSet","name":"Column Set 13","children":["Column 44","Column 45"],"wrapped":true},"Column 44":{"type":"column","name":"Column 44","children":["is_hidden"],"ratio":1,"minWidth":72},"Column 45":{"type":"column","name":"Column 45","children":["show_sidebar"],"ratio":1,"minWidth":72}},"order":["Column Set 11","Column Set 5","Column Set 12","Column Set 13","css"]}</additional_data>
+  <control_type>FormControl</control_type>
+  <parent_control keyed_name="ItemView.FormTab_6C6B5EDBB53F4762A582D8D4AD3418AB" type="cui_Control">6C6B5EDBB53F4762A582D8D4AD3418AB</parent_control>
+  <sealed>0</sealed>
+  <name>ItemView.Form</name>
+  <Relationships>
+   <Item type="cui_ControlFormField" id="34D0DADAFFB242598FC2AD69B47DCEDC" action="add">
+    <action>Add</action>
+    <related_id keyed_name="name" type="cui_FormField">
+     <Item type="cui_FormField" id="52AD200233604366878A3AF50757AF53" action="add">
+      <data_source>name</data_source>
+      <description xml:lang="en">Name of the Application</description>
+      <disabled>0</disabled>
+      <field_type>text</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>name</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="D0614D84FAF543199F7EC5BE2C516438" action="add">
+    <action>Add</action>
+    <related_id keyed_name="classification" type="cui_FormField">
+     <Item type="cui_FormField" id="CF635C4CC50747A6BAD43025E3DE022F" action="add">
+      <data_source>classification</data_source>
+      <description xml:lang="en">Single / Multi Page</description>
+      <disabled>0</disabled>
+      <field_type>classification</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>classification</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="A499A37625B84D9D82368849F4E7E09E" action="add">
+    <action>Add</action>
+    <related_id keyed_name="url_slug" type="cui_FormField">
+     <Item type="cui_FormField" id="47D3F3215D6B47DF99F7F73C6069D25F" action="add">
+      <data_source>url_slug</data_source>
+      <description xml:lang="en">Unique link to the Application from outside Aras</description>
+      <disabled>0</disabled>
+      <field_type>text</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>url_slug</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>512</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="70B46A823A924D5A837172EE1C0DDF79" action="add">
+    <action>Add</action>
+    <related_id keyed_name="description" type="cui_FormField">
+     <Item type="cui_FormField" id="F3EF16226CDF44C29843DD735D502BF8" action="add">
+      <data_source>description</data_source>
+      <description xml:lang="en">Description of the Application will be shown in the Overview</description>
+      <disabled>0</disabled>
+      <field_type>text</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>description</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>640</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="ADFF15B18D8B4F74BD9282D0CBA7B36C" action="add">
+    <action>Add</action>
+    <related_id keyed_name="owned_by_id" type="cui_FormField">
+     <Item type="cui_FormField" id="3B0E49F7B8364020A3F91BB384E343F6" action="add">
+      <data_source>owned_by_id</data_source>
+      <description xml:lang="en">The user has to be in this Identity to view the Application</description>
+      <disabled>0</disabled>
+      <field_type>item</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>owned_by_id</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>896</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="8846765D7FEC446E9C2F6B7E543FF8C4" action="add">
+    <action>Add</action>
+    <related_id keyed_name="init_method" type="cui_FormField">
+     <Item type="cui_FormField" id="9EED3D2E2C1542E9A5EAC19567897E5C" action="add">
+      <data_source>init_method</data_source>
+      <description xml:lang="en">This method will be called when the Application View is loaded</description>
+      <disabled>0</disabled>
+      <field_type>item</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>init_method</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>1024</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="304FFECEA1604F4F9B15EB14214BF134" action="add">
+    <action>Add</action>
+    <related_id keyed_name="css" type="cui_FormField">
+     <Item type="cui_FormField" id="2D2B634D6E1E459A9CEE94E1C042EE7A" action="add">
+      <data_source>css</data_source>
+      <description xml:lang="en">You can add Custom CSS that will be injected into the Application View</description>
+      <disabled>0</disabled>
+      <field_type>textarea</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>css</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>1152</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="83DD37C16E844166A010EB20985664A8" action="add">
+    <action>Add</action>
+    <related_id keyed_name="tab_label" type="cui_FormField">
+     <Item type="cui_FormField" id="BEB7ADF268BF4A9CBD28D44AE2BFD792" action="add">
+      <data_source>tab_label</data_source>
+      <description xml:lang="en">Label of the Application in the Aras Tabs</description>
+      <disabled>0</disabled>
+      <field_type>text</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>tab_label</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>1280</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="A09629CEC60043D8B8D1A0847BD830D5" action="add">
+    <action>Add</action>
+    <related_id keyed_name="icon" type="cui_FormField">
+     <Item type="cui_FormField" id="AE3092F617544BF1963098EACA7A5589" action="add">
+      <data_source>icon</data_source>
+      <description xml:lang="en">Path to icon of the Application</description>
+      <disabled>0</disabled>
+      <field_type>text</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>icon</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>1664</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="A68ACF3101E34D4093F8E7FC1D777B8F" action="add">
+    <action>Add</action>
+    <related_id keyed_name="show_sidebar" type="cui_FormField">
+     <Item type="cui_FormField" id="C7E4AAC89198422AB0312E8324247662" action="add">
+      <data_source>show_sidebar</data_source>
+      <disabled>0</disabled>
+      <field_type>checkbox</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>show_sidebar</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>1792</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="E354C47C8E48469280210921AB5CD955" action="add">
+    <action>Add</action>
+    <related_id keyed_name="color" type="cui_FormField">
+     <Item type="cui_FormField" id="0AD2E7C845C04675BE38E62453D27C02" action="add">
+      <data_source>color</data_source>
+      <disabled>0</disabled>
+      <field_type>color</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>color</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>2176</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="8DDC720A6D544DBD92A1704F89787ACB" action="add">
+    <action>Add</action>
+    <related_id keyed_name="active_color" type="cui_FormField">
+     <Item type="cui_FormField" id="EF741154FA744059A43A67AED211EDD9" action="add">
+      <data_source>active_color</data_source>
+      <disabled>0</disabled>
+      <field_type>color</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>active_color</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>2432</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="2A69FC0F102348C1AF77DF49A2546EDB" action="add">
+    <action>Add</action>
+    <related_id keyed_name="is_hidden" type="cui_FormField">
+     <Item type="cui_FormField" id="035861495D76420BA38F666631AAC10A" action="add">
+      <data_source>is_hidden</data_source>
+      <disabled>0</disabled>
+      <field_type>checkbox</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>is_hidden</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>2560</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="BAD3EED03A44452C83C1DA6297F19D82" action="add">
+    <action>Add</action>
+    <related_id keyed_name="app_order" type="cui_FormField">
+     <Item type="cui_FormField" id="C40ADAE7752546F4AFB44F8B08BF41CD" action="add">
+      <data_source>app_order</data_source>
+      <disabled>0</disabled>
+      <field_type>integer</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>app_order</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>2688</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlRule" id="88E2E6D7AF3049BDA40A8B75F4C16910" action="add">
+    <related_id keyed_name="08066014D1D2481EB1EBFBE3CD8F82FF" type="cui_Rule">08066014D1D2481EB1EBFBE3CD8F82FF</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlRule" id="BB7D44FAFFF24A0D8D1FCAD470B01841" action="add">
+    <related_id keyed_name="8096BCE452DD41B6BDA61E7B6FDF51F8" type="cui_Rule">8096BCE452DD41B6BDA61E7B6FDF51F8</related_id>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlRule" id="B0FF222B860F4572AD56DB049CA565B9" action="add">
+    <related_id keyed_name="57BA72BFE0804ADEBCC58DFF36F2B7CB" type="cui_Rule">57BA72BFE0804ADEBCC58DFF36F2B7CB</related_id>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

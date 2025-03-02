@@ -1,0 +1,95 @@
+﻿<AML>
+ <Item type="Form" id="481D5FE6C33A457ABF8760651643A149" action="add">
+  <classification>Responsive</classification>
+  <height>234</height>
+  <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
+  <width>699</width>
+  <name>CUI_Application_Single</name>
+  <Relationships>
+   <Item type="Body" id="2BC8BA3CB03A4E69835111F16FF444F5" action="add">
+    <bg_color>#FFFFFF</bg_color>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application_Single" type="Form">481D5FE6C33A457ABF8760651643A149</source_id>
+    <Relationships>
+     <Item type="Field" id="B4033243C7494DA28475A41AAE16FE92" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>textarea</field_type>
+      <font_color>#333333</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Copy (2) of Copy of Description</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="description" type="Property">84E703649357462E858A0427A2266037</propertytype_id>
+      <show_help>1</show_help>
+      <sort_order>384</sort_order>
+      <source_id keyed_name="2BC8BA3CB03A4E69835111F16FF444F5" type="Body">2BC8BA3CB03A4E69835111F16FF444F5</source_id>
+      <tab_index>3</tab_index>
+      <tab_stop>1</tab_stop>
+      <textarea_cols>350</textarea_cols>
+      <textarea_rows>50</textarea_rows>
+      <x>10</x>
+      <y>90</y>
+      <name>description</name>
+     </Item>
+     <Item type="Field" id="0E876E90C7AC482D9D8C4065FD8D255C" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>image</field_type>
+      <font_color>#333333</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Copy (2) of Copy of Icon</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="icon" type="Property">36F1859A903F4E94BC6863A43881587F</propertytype_id>
+      <show_help>1</show_help>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="2BC8BA3CB03A4E69835111F16FF444F5" type="Body">2BC8BA3CB03A4E69835111F16FF444F5</source_id>
+      <tab_index>1</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>10</x>
+      <y>10</y>
+      <name>icon</name>
+     </Item>
+     <Item type="Field" id="CD36FA67C07645ED8A837B936E969CB3" action="add">
+      <border_width>0</border_width>
+      <display_length>64</display_length>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#333333</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Copy (2) of Copy of Name</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="name" type="Property">AB1F838C63204FB2B1CA1A26CC60D986</propertytype_id>
+      <show_help>1</show_help>
+      <sort_order>256</sort_order>
+      <source_id keyed_name="2BC8BA3CB03A4E69835111F16FF444F5" type="Body">2BC8BA3CB03A4E69835111F16FF444F5</source_id>
+      <tab_index>2</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>10</x>
+      <y>50</y>
+      <name>name</name>
+     </Item>
+    </Relationships>
+   </Item>
+   <Item type="FormComposite" id="8D698D22D34844E2BB45CC8D31D406F1" action="add">
+    <related_id keyed_name="CUI_Application_Single" type="cui_WindowSection">5D6BACFC81554F428A81541F3AF553DE</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application_Single" type="Form">481D5FE6C33A457ABF8760651643A149</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

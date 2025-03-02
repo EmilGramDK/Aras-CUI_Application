@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Page</title>
+    <script type="text/javascript" src="../../../javascript/include.aspx?classes=ArasModules"></script>
+    <script>
+      window.aras = parent.aras;
+      window.layout = parent.layout;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("appname").innerText = window.layout.state.title;
+      });
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 10px 32px;
+        position: relative;
+      }
+      pre {
+        margin-top: 6px;
+        background: lightblue;
+        padding: 6px;
+        width: fit-content;
+      }
+      p {
+        margin-top: 35px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .split-view {
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+        width: 500px;
+        background: lightseagreen;
+        margin-top: 8px;
+      }
+      .split-view .view {
+        width: calc(50% - 4px);
+      }
+      .aras-splitter {
+        position: relative;
+        box-sizing: border-box;
+        background-color: #eee;
+        --holder-length: 96px;
+        --holder-thickness: 4px;
+        --splitter-thickness: 8px;
+        --splitter-border-size: 0;
+      }
+      .aras-splitter-ghost {
+        opacity: 1;
+        background-color: #0303b0;
+      }
+      .absolute-bottom {
+        position: absolute;
+        bottom: 20px;
+        left: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CUI Application Demo Page</h1>
+
+    <p>Its possible to access properties from the parent</p>
+    <pre>parent.layout.state.title: <b><span id="appname"></span></b></pre>
+
+    <p>We can use Aras Web Components in this page.<br />For example, we can use the <b>aras-splitter</b> component.</p>
+    <div class="split-view">
+      <div class="view"></div>
+      <aras-splitter class="aras-splitter"></aras-splitter>
+      <div class="view"></div>
+    </div>
+
+    <div class="absolute-bottom">
+      <p>You can find this page file in the following path:</p>
+      <pre><b>Innovator/Client/Solutions/CUI_Application/html/demo.html</b></pre>
+    </div>
+  </body>
+</html>

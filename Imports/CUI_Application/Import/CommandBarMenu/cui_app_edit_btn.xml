@@ -1,0 +1,9 @@
+﻿<AML>
+ <Item type="CommandBarMenu" id="5E8EC85B280C49D794EBAA047FD11373" action="add">
+  <image>../images/edit.svg</image>
+  <label xml:lang="en">Edit Application</label>
+  <on_click_handler keyed_name="CUI_Application_Edit_BtnClick" type="Method">BFD529E9E24F4F7E9FC49556D0942CA5</on_click_handler>
+  <on_init_handler keyed_name="CUI_Application_Edit_BtnInit" type="Method">DF077700DF4849FF9D213FF1FEC49CFC</on_init_handler>
+  <name>cui_app_edit_btn</name>
+ </Item>
+</AML>

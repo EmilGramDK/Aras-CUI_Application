@@ -1,0 +1,15 @@
+﻿<AML>
+ <Item type="CUI_Application" id="7D4CD853C7BB4213BF7CF399F579C3B8" action="add">
+  <app_order>99999</app_order>
+  <classification>Single Page</classification>
+  <color>#303f9f</color>
+  <description>This is a demo of an external application that will open in a new browser tab.</description>
+  <is_hidden>0</is_hidden>
+  <open_as>browsertab</open_as>
+  <owned_by_id keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</owned_by_id>
+  <page_url>https://example.com</page_url>
+  <show_sidebar>1</show_sidebar>
+  <url_slug>external</url_slug>
+  <name>External Example</name>
+ </Item>
+</AML>

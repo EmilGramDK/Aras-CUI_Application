@@ -1,0 +1,16 @@
+﻿<AML>
+ <Item type="cui_WindowSection" id="5D6BACFC81554F428A81541F3AF553DE" action="add">
+  <classification>Data Model</classification>
+  <location keyed_name="ItemView" type="cui_Location">C18BD6E10E024EC786799C510D586143</location>
+  <name>CUI_Application_Single</name>
+  <Relationships>
+   <Item type="cui_WindowSectionControl" id="3FCFB09880F7495580578D0589550FA1" action="add">
+    <action>Add</action>
+    <related_id keyed_name="ItemView.Form_B265CE05DAAF4AFCA33097D1273CE5FD" type="cui_Control">B265CE05DAAF4AFCA33097D1273CE5FD</related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application_Single" type="cui_WindowSection">5D6BACFC81554F428A81541F3AF553DE</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

@@ -1,0 +1,8 @@
+﻿<AML>
+ <Item type="cui_Rule" id="08066014D1D2481EB1EBFBE3CD8F82FF" action="add">
+  <behavior_text>{"Property":{"open_as_multi":{"hidden":true,"readonly":false},"open_as_single":{"hidden":true,"readonly":false}}}</behavior_text>
+  <behavior_type>display</behavior_type>
+  <condition_text>[]</condition_text>
+  <name>Default</name>
+ </Item>
+</AML>

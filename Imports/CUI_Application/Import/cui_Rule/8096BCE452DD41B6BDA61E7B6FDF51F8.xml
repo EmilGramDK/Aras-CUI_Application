@@ -1,0 +1,9 @@
+﻿<AML>
+ <Item type="cui_Rule" id="8096BCE452DD41B6BDA61E7B6FDF51F8" action="add">
+  <behavior_text>{"Property":{"open_as_multi":{"hidden":false,"readonly":false}}}</behavior_text>
+  <behavior_type>display</behavior_type>
+  <condition_text>[{"id":"C11C20EC95A045DB8AD171993270299A","function":"value_of_property","property":"classification","operator":"is","criteria":"Multi Page"}]</condition_text>
+  <condition_type>property</condition_type>
+  <name>Multi Page</name>
+ </Item>
+</AML>

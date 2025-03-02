@@ -1,0 +1,37 @@
+﻿<AML>
+ <Item type="Method" id="FC86F102C94B431C9ACCEE60E2CABA3C" action="add">
+  <comments>This method inits the favorite button in application view.</comments>
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[/**
+ * CUI_Application Aras Solution V1.0.0
+ * More Info: https://github.com/EmilGramDK/Aras-CUI_Application
+ *
+ * Method: CUI_Application_Favorite_Init
+ * Created By: Emil Gram
+ * Created On: 15-01-2025
+ * This method inits the favorite button in application view.
+ * Toggles a spinner during the process.
+ */
+
+const { favorite } = options.getProps();
+
+const image = favorite ? 'FavoriteOn.svg' : 'FavoriteOff.svg';
+const tooltip = 'favorite_button.' + (favorite ? 'delete_saved_search' : 'save_search');
+
+let disabled = false;
+if (favorite) {
+	const { identityId, type: userType } = aras.user;
+	const { ownedBy } = favorite;
+	disabled = ownedBy !== identityId && userType !== 'admin';
+}
+
+return {
+	hidden: false,
+	disabled,
+	image: '../images/' + image,
+	tooltip_template: aras.getResource('', tooltip)
+};]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>CUI_Application_Favorite_Init</name>
+ </Item>
+</AML>

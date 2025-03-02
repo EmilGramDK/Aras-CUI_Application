@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Page 2</title>
+    <script>
+      window.aras = parent.aras;
+      window.layout = parent.layout;
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 10px 32px;
+        position: relative;
+      }
+      p {
+        margin-top: 35px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      pre {
+        margin-top: 6px;
+        background: lightblue;
+        padding: 6px;
+        width: fit-content;
+      }
+      pre.button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+      }
+      pre.button:hover {
+        background: rgb(199, 230, 240);
+      }
+      .absolute-bottom {
+        position: absolute;
+        bottom: 20px;
+        left: 32px;
+      }
+    </style>
+    <script>
+      const openMethod = () => {
+        top.aras.uiShowItem("Method", "4906782098084C23A000FFF40B1A0481");
+      };
+    </script>
+  </head>
+  <body>
+    <h1>The Hidden Page</h1>
+
+    <div>
+      <p>Check out the method below by clicking the button.</p>
+      <pre
+        class="button"
+        onclick="openMethod();"><img src="../../../images/Method.svg" width="24"><b>CUI_Application_DemoAppBtnClick</b></pre>
+    </div>
+
+    <div class="absolute-bottom">
+      <p>You can find this page file in the following path:</p>
+      <pre><b>Innovator/Client/Solutions/CUI_Application/html/demo2.html</b></pre>
+    </div>
+  </body>
+</html>

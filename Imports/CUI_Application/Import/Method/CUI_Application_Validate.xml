@@ -1,0 +1,64 @@
+﻿<AML>
+ <Item type="Method" id="ABC622E61EE0425F9E5E832717AA9226" action="add">
+  <comments>Validates required properties on CUI_Application</comments>
+  <execution_allowed_to keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</execution_allowed_to>
+  <method_code><![CDATA[/**
+ * CUI_Application Aras Solution V1.0.0
+ * More Info: https://github.com/EmilGramDK/Aras-CUI_Application
+ *
+ * Method: CUI_Application_Validate
+ * Created By: Emil Gram
+ * Created On: 15-01-2025
+ * Validates required properties on CUI_Application
+ */
+
+Innovator inn = this.getInnovator();
+
+// Validate required properties for classification(Single Page)
+string classification = this.getProperty("classification");
+bool hasPageURL = !string.IsNullOrEmpty(this.getProperty("page_url"));
+bool hasOpenAs = !string.IsNullOrEmpty(this.getProperty("open_as"));
+
+// Ensure that the "page_url" and "open_as" properties are not empty
+if (classification == "Single Page" && (!hasPageURL || !hasPageURL)) {
+    return inn.newError("Page URL and Open As properties are required when classification is Single Page.");
+}
+
+// Check if the action is "add" and ensure an initialization method exists
+// bool isAdd = this.getAction() == "add";
+// bool hasInitMethod = !string.IsNullOrEmpty(this.getProperty("init_method", ""));
+
+// if(!isAdd || hasInitMethod) return this;
+
+// // No "init_method" is provided, create a default method
+// string appName = this.getProperty("name");
+// string appId = this.getID();
+
+// // Clean the app name to remove special characters and create shortened names (max 32 characters)
+// string cleanedAppName = System.Text.RegularExpressions.Regex.Replace(appName, "[^a-zA-Z0-9 ]", "");
+// string shortenedAppName = cleanedAppName.Substring(0, Math.Min(16, cleanedAppName.Length));
+// string shortenedAppId = appId.Substring(0, Math.Min(15, appId.Length));
+
+// // Generate a method name using the cleaned app name and ID
+// string methodName = $"{shortenedAppName}_{shortenedAppId}";
+
+// // Create a new method item in Aras
+// Item methodItem = inn.newItem("Method", "add");
+// methodItem.setProperty("name", methodName);
+// string methodCode = @"// Placeholder for method logic\n// Add your code implementation here.";
+// methodItem.setProperty("method_code", methodCode);
+
+// // Apply the method creation and check for errors
+// methodItem = methodItem.apply();
+// if (methodItem.isError()) {
+//     return methodItem; // Return error if method creation fails
+// }
+
+// // Set the "init_method" property to the created method's ID
+// this.setProperty("init_method", methodItem.getID());
+    
+return this;]]></method_code>
+  <method_type>C#</method_type>
+  <name>CUI_Application_Validate</name>
+ </Item>
+</AML>

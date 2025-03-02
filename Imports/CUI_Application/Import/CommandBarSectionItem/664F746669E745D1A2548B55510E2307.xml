@@ -1,0 +1,17 @@
+﻿<AML>
+ <Item type="CommandBarSectionItem" id="664F746669E745D1A2548B55510E2307" action="add">
+  <action>Add</action>
+  <related_id keyed_name="cui_app_edit_btn" type="CommandBarItem">
+   <Item type="CommandBarMenu" id="5E8EC85B280C49D794EBAA047FD11373" action="add">
+    <image>../images/edit.svg</image>
+    <label xml:lang="en">Edit Application</label>
+    <on_click_handler keyed_name="CUI_Application_Edit_BtnClick" type="Method">BFD529E9E24F4F7E9FC49556D0942CA5</on_click_handler>
+    <on_init_handler keyed_name="CUI_Application_Edit_BtnInit" type="Method">DF077700DF4849FF9D213FF1FEC49CFC</on_init_handler>
+    <name>cui_app_edit_btn</name>
+   </Item>
+  </related_id>
+  <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+  <sort_order>1</sort_order>
+  <source_id keyed_name="com.aras.innovator.cui_default.popup_menu_for_item_grid" type="CommandBarSection">89E6EFE42BA04A3680CD125918BB82DF</source_id>
+ </Item>
+</AML>

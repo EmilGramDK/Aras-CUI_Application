@@ -1,0 +1,13 @@
+﻿<AML>
+ <Item type="CUI_Application_Pages" id="9644B1E9DC9E442FA1C28473184C2A58" action="add">
+  <icon />
+  <is_default>0</is_default>
+  <is_hidden>1</is_hidden>
+  <label>Hidden Page</label>
+  <name>demo_app_third</name>
+  <owned_by_id keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</owned_by_id>
+  <page_url>../Solutions/CUI_Application/html/demo2.html?ver=1.0.0</page_url>
+  <sort_order>384</sort_order>
+  <source_id keyed_name="Multi Page Demo" type="CUI_Application">224517629AF44720AAE560D06DDE3CF9</source_id>
+ </Item>
+</AML>

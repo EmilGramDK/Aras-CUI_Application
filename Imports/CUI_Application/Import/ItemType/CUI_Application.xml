@@ -1,0 +1,422 @@
+﻿<AML>
+ <Item type="ItemType" id="772CE3BCA6B54634AF93EB25828EC350" action="add">
+  <allow_private_permission>1</allow_private_permission>
+  <auto_search>1</auto_search>
+  <class_structure><![CDATA[<class id="772CE3BCA6B54634AF93EB25828EC350"><class id="A20821DD4EC346AFAA280275F4AE3890" name="Single Page" /><class id="C45DDE57C28B449194CF094BE32FCF1D" name="Multi Page" /></class>]]></class_structure>
+  <default_page_size>25</default_page_size>
+  <enforce_discovery>1</enforce_discovery>
+  <hide_where_used>0</hide_where_used>
+  <implementation_type>table</implementation_type>
+  <instance_data>CUI_APPLICATION</instance_data>
+  <is_dependent>0</is_dependent>
+  <is_relationship>0</is_relationship>
+  <is_versionable>0</is_versionable>
+  <label xml:lang="en">Application</label>
+  <label_plural xml:lang="en">Applications</label_plural>
+  <large_icon>../Solutions/CUI_Application/images/default_icon.svg</large_icon>
+  <maxrecords>25</maxrecords>
+  <open_icon>../Solutions/CUI_Application/images/default_icon.svg</open_icon>
+  <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+  <show_parameters_tab>0</show_parameters_tab>
+  <structure_view>tabs on</structure_view>
+  <unlock_on_logout>0</unlock_on_logout>
+  <use_src_access>0</use_src_access>
+  <name>CUI_Application</name>
+  <Relationships>
+   <Item type="Property" id="4AD93608BEBE46EF87CD2C405CD7BB79" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>color</data_type>
+    <default_value xml:lang="en">rgba(255,255,255,0.4);</default_value>
+    <is_federated>0</is_federated>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Active Color</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>62</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <track_history>0</track_history>
+    <name>active_color</name>
+   </Item>
+   <Item type="Property" id="0E0CA2CFD7714CA6A038FAF74861A63E" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>integer</data_type>
+    <default_value xml:lang="en">100</default_value>
+    <is_federated>0</is_federated>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <label xml:lang="en">Order</label>
+    <order_by>0</order_by>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>100</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <track_history>0</track_history>
+    <name>app_order</name>
+   </Item>
+   <Item type="Property" id="9B458EA193654709AE75F9A218D217F3" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>color</data_type>
+    <default_value xml:lang="en">#303f9f</default_value>
+    <is_federated>0</is_federated>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Color</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>60</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <track_history>0</track_history>
+    <name>color</name>
+   </Item>
+   <Item type="Property" id="84E703649357462E858A0427A2266037" action="add">
+    <column_alignment>left</column_alignment>
+    <column_width>200</column_width>
+    <data_type>string</data_type>
+    <is_federated>0</is_federated>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <label xml:lang="en">Description</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>20</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <stored_length>128</stored_length>
+    <track_history>0</track_history>
+    <name>description</name>
+   </Item>
+   <Item type="Property" id="36F1859A903F4E94BC6863A43881587F" action="add">
+    <column_alignment>left</column_alignment>
+    <column_width>65</column_width>
+    <data_type>image</data_type>
+    <default_value xml:lang="en" />
+    <is_federated>0</is_federated>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Icon</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>10</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <track_history>0</track_history>
+    <name>icon</name>
+   </Item>
+   <Item type="Property" id="3FFF0EB855BE44FE8ED999BF12BEE03A" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="Method" type="ItemType" name="Method">87879A09B8044DE380D59DF22DE1867F</data_source>
+    <data_type>item</data_type>
+    <is_federated>0</is_federated>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <item_behavior>float</item_behavior>
+    <label xml:lang="en">Init Method</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>40</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <track_history>0</track_history>
+    <name>init_method</name>
+   </Item>
+   <Item type="Property" id="36E01EA0304A48D483398CF338B934BE" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>boolean</data_type>
+    <default_value xml:lang="en">0</default_value>
+    <is_federated>0</is_federated>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Is Hidden</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>24</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <track_history>0</track_history>
+    <name>is_hidden</name>
+   </Item>
+   <Item type="Property" id="AB1F838C63204FB2B1CA1A26CC60D986" action="add">
+    <column_alignment>left</column_alignment>
+    <column_width>150</column_width>
+    <data_type>string</data_type>
+    <is_federated>0</is_federated>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <keyed_name_order>0</keyed_name_order>
+    <label xml:lang="en">Name</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>15</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <stored_length>64</stored_length>
+    <track_history>0</track_history>
+    <name>name</name>
+   </Item>
+   <Item type="Property" id="8C22DD915998428CA154FF9F230C2495" action="add">
+    <class_path>Single Page</class_path>
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="CUI_Application_OpenAs_Single">36C7B3705EBA4B52ABD8B7CEF660BF4A</data_source>
+    <data_type>list</data_type>
+    <default_value xml:lang="en">arastab</default_value>
+    <is_federated>0</is_federated>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Open As</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>70</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <stored_length>256</stored_length>
+    <track_history>0</track_history>
+    <name>open_as</name>
+   </Item>
+   <Item type="Property" id="C28C02C5102E47ECB572CEC07E807553" action="add">
+    <class_path>Single Page</class_path>
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_federated>0</is_federated>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Page URL</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>75</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <stored_length>256</stored_length>
+    <track_history>0</track_history>
+    <name>page_url</name>
+   </Item>
+   <Item type="Property" id="2DA0A904F630464B9BBED109DCD125B0" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>boolean</data_type>
+    <default_value xml:lang="en">1</default_value>
+    <is_federated>0</is_federated>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Show Sidebar</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>65</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <track_history>0</track_history>
+    <name>show_sidebar</name>
+   </Item>
+   <Item type="Property" id="CE4328473C2845529C17AC5047A1BD61" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_federated>0</is_federated>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Tab Label</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>25</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <stored_length>24</stored_length>
+    <track_history>0</track_history>
+    <name>tab_label</name>
+   </Item>
+   <Item type="View" id="B8F791F4390D4A2DBDFEDAEC31B9E76D" action="add">
+    <client>js</client>
+    <form_classification />
+    <related_id keyed_name="CUI_Application" type="Form">6672E6E043384B6292A6F10697F5FEB4</related_id>
+    <role keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </role>
+    <show_ssvc>0</show_ssvc>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <type>default</type>
+   </Item>
+   <Item type="View" id="C6D9C2B6A3F94EB8950D41CC961D02AC" action="add">
+    <client>js</client>
+    <form_classification>Single Page</form_classification>
+    <related_id keyed_name="CUI_Application_Single" type="Form">481D5FE6C33A457ABF8760651643A149</related_id>
+    <role keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </role>
+    <show_ssvc>0</show_ssvc>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <type>default</type>
+   </Item>
+   <Item type="Server Event" id="4CB9B7EC0A5F45E8BE00FB60C94616B3" action="add">
+    <event_version>version_1</event_version>
+    <is_required>0</is_required>
+    <related_id keyed_name="CUI_Application_Validate" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>CUI_Application_Validate</name>
+     </Item>
+    </related_id>
+    <server_event>onBeforeAdd</server_event>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+   </Item>
+   <Item type="Server Event" id="9915E173934D4BA189F2805A05CC5F1C" action="add">
+    <event_version>version_1</event_version>
+    <is_required>0</is_required>
+    <related_id keyed_name="CUI_Application_Validate" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>CUI_Application_Validate</name>
+     </Item>
+    </related_id>
+    <server_event>onBeforeUpdate</server_event>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+   </Item>
+   <Item type="Client Event" id="CDE7209FC7AC40389874C777C1764BB1" action="add">
+    <client_event>OnShowItem</client_event>
+    <related_id keyed_name="CUI_Application_OnShow" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>CUI_Application_OnShow</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+   </Item>
+   <Item type="Can Add" id="4DF1686B529B45578F4B33EC7A05EC81" action="add">
+    <can_add>1</can_add>
+    <related_id keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+   </Item>
+   <Item type="Allowed Permission" id="6A6783C2FFCA48E38ABB1F4DD3CB68D6" action="add">
+    <is_default>1</is_default>
+    <related_id keyed_name="CUI_Application" type="Permission">F8C271F7FC094E67A1049D6B12190C30</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+ <Item type="ItemType" id="772CE3BCA6B54634AF93EB25828EC350" action="edit">
+  <Relationships>
+   <Item type="Property" id="42C6C33AC28548A88FD621F9EF0DA01E" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_federated>0</is_federated>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>1</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <label xml:lang="en">URL Slug</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>30</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <stored_length>32</stored_length>
+    <track_history>0</track_history>
+    <name>url_slug</name>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='772CE3BCA6B54634AF93EB25828EC350' and name='classification'">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <default_value xml:lang="en">Single Page</default_value>
+    <is_federated>0</is_federated>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <label xml:lang="en">Type</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>80</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <stored_length>512</stored_length>
+    <track_history>0</track_history>
+    <name>classification</name>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='772CE3BCA6B54634AF93EB25828EC350' and name='css'">
+    <column_alignment>left</column_alignment>
+    <data_type>text</data_type>
+    <is_federated>0</is_federated>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Custom CSS</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>45</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <track_history>0</track_history>
+    <name>css</name>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='772CE3BCA6B54634AF93EB25828EC350' and name='owned_by_id'">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="Identity" type="ItemType" name="Identity">E582AB17663F4EF28460015B2BE9E094</data_source>
+    <data_type>item</data_type>
+    <default_value xml:lang="en">A73B655731924CD0B027E4F4D5FCC0A9</default_value>
+    <is_federated>0</is_federated>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <item_behavior>float</item_behavior>
+    <label xml:lang="en">Identity</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>22</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <track_history>0</track_history>
+    <name>owned_by_id</name>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

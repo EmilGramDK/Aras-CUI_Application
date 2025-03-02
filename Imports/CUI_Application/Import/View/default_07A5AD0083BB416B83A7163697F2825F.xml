@@ -1,0 +1,35 @@
+﻿<AML>
+ <Item type="View" id="07A5AD0083BB416B83A7163697F2825F" action="add">
+  <client>js</client>
+  <related_id keyed_name="CUI_Application_Pages" type="Form">
+   <Item type="Form" id="398E7CCF6EEC46699D4C5DCC2FF1982B" action="add">
+    <classification>Responsive</classification>
+    <height>234</height>
+    <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
+    <width>699</width>
+    <name>CUI_Application_Pages</name>
+    <Relationships>
+     <Item type="Body" id="51A60E40977E437993D1CCE8C0F299F9" action="add">
+      <bg_color>#FFFFFF</bg_color>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="CUI_Application_Pages" type="Form">398E7CCF6EEC46699D4C5DCC2FF1982B</source_id>
+     </Item>
+     <Item type="FormComposite" id="46E42AA9BB344EC0B1080DF0ABC773F6" action="add">
+      <related_id keyed_name="CUI_Application_Pages" type="cui_WindowSection">31C0171C33F941C9B7642FCB71DF9B78</related_id>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="CUI_Application_Pages" type="Form">398E7CCF6EEC46699D4C5DCC2FF1982B</source_id>
+     </Item>
+    </Relationships>
+   </Item>
+  </related_id>
+  <role keyed_name="World" type="Identity">
+   <Item type="Identity" action="get" select="id">
+    <name>World</name>
+   </Item>
+  </role>
+  <show_ssvc>0</show_ssvc>
+  <sort_order>128</sort_order>
+  <source_id keyed_name="CUI_Application_Pages" type="ItemType" name="CUI_Application_Pages">C321E28AAFC1489BB6771B9D92D2E707</source_id>
+  <type>default</type>
+ </Item>
+</AML>

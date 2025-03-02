@@ -1,0 +1,95 @@
+﻿<AML>
+ <Item type="Method" id="50514118E79B40C78638EE0964E60141" action="add">
+  <comments>This method manages the application state by checking if the application item is new or in edit mode.</comments>
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[/**
+ * CUI_Application Aras Solution V1.0.0
+ * More Info: https://github.com/EmilGramDK/Aras-CUI_Application
+ *
+ * Method: CUI_Application_OnShowItem
+ * Created By: Emil Gram
+ * Created On: 15-02-2025
+ * This method manages the application state by checking if the application item is new or in edit mode.
+ * It displays appropriate notifications and activates the default view accordingly.
+ * Finally, it loads and displays the specified view using the ModulesManager.
+ */
+
+const itemId = inDom.getAttribute("id");
+const openedTab = top.aras.uiFindWindowEx(itemId);
+
+if(openedTab) {
+    top.arasTabs.selectTab(openedTab.name);
+    return;
+}
+
+const checkForNew = () => {
+    return inDom.getAttribute("action") == "add" || inDom.getAttribute("isTemp") == "1";
+};
+
+const checkForEdit = () => {
+    return aras.isLockedByUser(inDom);
+};
+
+// Check if application should open for example in a new browser tab instead
+const checkOpenAs = () => {
+    const { classification, open_as = "arastab", page_url, name } = ArasModules.xmlToODataJson(inDom);
+    if (classification === "Multi Page" || open_as === "arastab") return false;
+
+    if (!page_url) {
+        ArasModules.notify("The application could not be opened. App URL is missing.");
+        return true;
+    }
+
+    if (open_as === "browsertab") {
+        window.open(page_url, name).focus();
+        return true;
+    }
+
+    if (open_as === "window") {
+        window.open(page_url, name, "height=700,width=900");
+        return true;
+    }
+
+    if(open_as === "dialog") {
+        openPageInArasDialog(name, page_url);
+        return true;
+    }
+
+    return false;
+}
+
+// Check if the application is new or in edit mode and notify the user accordingly
+if (checkForNew() || checkForEdit()) {
+    ArasModules.notify("Application is claimed. Edit Mode activated.");
+    inArgs.showDefaultView = true;
+} else if (checkOpenAs()) return;
+
+// Load and display the specified view using the ModulesManager
+return ModulesManager.using(
+    [
+        '../Solutions/CUI_Application/itemWindowView', // Path to the custom item window view
+        'aras.innovator.core.ItemWindow/DefaultItemWindowCreator'
+    ],
+    (View, Creator) => {
+        const view = new View(inDom, inArgs);
+        const creator = new Creator(view);
+        return creator.ShowView();
+    }
+);
+
+function openPageInArasDialog(title, page_url) {
+    var param = {
+        title,
+        aras: top.aras,
+        dialogWidth: 800,
+        dialogHeight: 650,
+        content: page_url
+    };
+
+    top.ArasModules.Dialog.show('iframe', param);
+}
+]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>CUI_Application_OnShow</name>
+ </Item>
+</AML>

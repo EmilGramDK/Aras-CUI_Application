@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <base href="@Url.ContentWithSalt("~/scripts/")" />     
+    <script type="text/javascript" src="@Url.ContentWithSalt("~/javascript/include.aspx?classes=ArasModules,ScriptSet1")"></script>
+    <script type="text/javascript" src="@Url.ContentWithSalt("~/Solutions/CUI_Application/Scripts/itemView.js?ver=1.0.0")"></script>
+    <script type="module" src="@Url.ContentWithSalt("~/Solutions/CUI_Application/Scripts/CuiAppLayout.js?ver=1.0.0")"></script>
+    
+    <script type="module">
+      const layoutNode = document.getElementById("BorderContainer");
+      window.layout = new CuiAppLayout(layoutNode, itemId);
+      window.layout.init();
+      window.addEventListener("unload", () => {
+        window.layout.destroy();
+      });
+    </script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="@Url.ContentWithSalt("~/javascript/include.aspx?classes=common.min.css,cuiLayout.css")" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="@Url.ContentWithSalt("~/Solutions/CUI_Application/styles/itemView.css?ver=1.0.0")" />
+  </head>
+  <body>
+    <aras-spinner class="aras-item-view" active>
+      <div
+        id="top"
+        class="aras-item-view__toolbars aras-bordered-toolbar-container">
+        <div id="top-toolbars"></div>
+      </div>
+      <div id="BorderContainer" class="aras-flex aras-item-view__container">
+        <div id="center" class="aras-flex-grow aras-item-view__content">
+          <aras-switcher
+            id="viewers"
+            class="aras-item-view__viewers"></aras-switcher>
+          <aras-tooltip></aras-tooltip>
+        </div>
+      </div>
+    </aras-spinner>
+  </body>
+</html>

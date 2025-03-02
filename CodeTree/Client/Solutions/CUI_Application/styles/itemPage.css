@@ -1,0 +1,19 @@
+@import url("../../../javascript/include.aspx?classes=common.min.css,cuiLayout.css");
+
+/**
+/** Cui Application Page Styles
+/** Adds styling to the page of the Cui Application
+/**/
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: white;
+  color: #374151;
+  padding: 0;
+  margin: 0;
+}

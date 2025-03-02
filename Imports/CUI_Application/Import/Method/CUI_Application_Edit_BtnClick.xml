@@ -1,0 +1,61 @@
+﻿<AML>
+ <Item type="Method" id="BFD529E9E24F4F7E9FC49556D0942CA5" action="add">
+  <execution_allowed_to keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</execution_allowed_to>
+  <method_code><![CDATA[/**
+ * CUI_Application Aras Solution V1.0.0
+ * More Info: https://github.com/EmilGramDK/Aras-CUI_Application
+ *
+ * Method: CUI_Application_Edit_BtnClick
+ * Created By: Emil Gram
+ * Created On: 21-02-2025
+ */
+
+if (!options) return;
+const { getState, itemType, rows } = options;
+const { grid } = getState();
+
+const selectedRowId = grid.selectedRows[0];
+const item = options.rows.get(selectedRowId);
+
+if (!checkClaimItem(item)) return;
+closeAppIfOpen(item.id).then(() => {
+  claimItem(item.id);
+})
+
+function claimItem(itemId) {
+  let item = aras.newIOMItem("CUI_Application", "lock");
+  item.setID(itemId);
+  item.lockItem();
+
+  if (item.isError()) {
+    ArasModules.notify(item.getErrorString(), {
+      type: "error",
+      timeout: 10000
+    });
+    return;
+  }
+
+  aras.uiShowItem("CUI_Application", itemId);
+}
+
+async function closeAppIfOpen(itemId) {
+  const win = top.aras.uiFindWindowEx(itemId);
+  if (win) await top.arasTabs.closeTabs([win.name]);
+}
+
+function checkClaimItem(item) {
+  const lockedBy = item.locked_by_id;
+  if (!lockedBy || lockedBy == aras.getUserID()) return true;
+
+  const userName = item["locked_by_id@aras.keyed_name"] || "another user";
+
+  ArasModules.notify(`The application cannot be edited, because its already claimed by ${userName}`, {
+    type: "warning",
+    timeout: 5000
+  });
+  return false;
+}]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>CUI_Application_Edit_BtnClick</name>
+ </Item>
+</AML>

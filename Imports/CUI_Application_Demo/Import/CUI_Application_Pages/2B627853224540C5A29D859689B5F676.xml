@@ -1,0 +1,12 @@
+﻿<AML>
+ <Item type="CUI_Application_Pages" id="2B627853224540C5A29D859689B5F676" action="add">
+  <is_default>1</is_default>
+  <is_hidden>0</is_hidden>
+  <label>Demo Page</label>
+  <name>demo_app_first</name>
+  <owned_by_id keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</owned_by_id>
+  <page_url>../Solutions/CUI_Application/html/demo.html?ver=1.0.0</page_url>
+  <sort_order>128</sort_order>
+  <source_id keyed_name="Multi Page Demo" type="CUI_Application">224517629AF44720AAE560D06DDE3CF9</source_id>
+ </Item>
+</AML>
