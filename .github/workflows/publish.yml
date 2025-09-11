@@ -7,9 +7,13 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
@@ -23,10 +27,12 @@ jobs:
       - name: Build Solution
         run: bun run build
 
-      - name: Configure Git
+      - name: Commit formatted files
         run: |
-          git config --global user.email "hi@emilgram.dk"
-          git config --global user.name "EmilGramDK"
-
-      - name: Push version update
-        run: git push --follow-tags
+          git config user.email "hi@emilgram.dk"
+          git config user.name "EmilGramDK"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(ci): apply formatting"
+            git push
+          fi
