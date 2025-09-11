@@ -1,5 +1,6 @@
 ﻿<AML>
  <Item type="CUI_Application" id="7D4CD853C7BB4213BF7CF399F579C3B8" action="add">
+  <active_color>rgba(25</active_color>
   <app_order>99999</app_order>
   <classification>Single Page</classification>
   <color>#303f9f</color>

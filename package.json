@@ -1,0 +1,17 @@
+{
+  "name": "aras-cui_application",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./CodeTree/Client/Solutions/CUI_Application/Scripts/mainView.ts --outdir ./CodeTree/Client/Solutions/CUI_Application/Scripts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@emilgramdk/web": "^0.0.31",
+    "arasjs": "^0.0.79",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
+  },
+  "prettier": "@emilgramdk/web/prettier"
+}

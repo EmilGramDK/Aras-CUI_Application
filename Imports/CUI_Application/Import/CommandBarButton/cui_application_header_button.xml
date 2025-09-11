@@ -1,10 +1,9 @@
 ﻿<AML>
  <Item type="CommandBarButton" id="A57390A96F34496E9C6A1CEB2408F191" action="add">
   <additional_data>{
-"cssClass": "cui_application-header-apps-button"
+"cssClass": "cui-app-button"
 }</additional_data>
-  <on_click_handler keyed_name="CUI_Application_Sidebar_BtnClick" type="Method">5C5081E8C08B48D1B1929BE8A021A684</on_click_handler>
-  <on_init_handler keyed_name="CUI_Application_Sidebar_BtnInit" type="Method">60C480D8C49E485AB5CCCD8B2A97E4EA</on_init_handler>
+  <on_init_handler keyed_name="CUI_Application_SidebarInit" type="Method">60C480D8C49E485AB5CCCD8B2A97E4EA</on_init_handler>
   <name>cui_application-header-apps-button</name>
  </Item>
 </AML>

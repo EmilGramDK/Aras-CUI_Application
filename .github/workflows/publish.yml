@@ -1,0 +1,21 @@
+name: Build Solution
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Build Solution
+        run: bun run build
+
+      - name: Push version update
+        run: git push --follow-tags

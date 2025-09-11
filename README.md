@@ -8,13 +8,13 @@ This Aras Community Project introduces an ItemType designed to serve as a centra
 
 | Release | Notes          |
 | ------- | -------------- |
-| 1.0.0   | First release. |
+| 0.1.0   | First release. |
 
 #### Supported Aras Versions
 
 | Project | Aras |
 | ------- | ---- |
-| 1.0.0   | R30  |
+| 0.1.0   | R30  |
 
 ## Installation
 
@@ -26,7 +26,7 @@ This Aras Community Project introduces an ItemType designed to serve as a centra
 
 1. Aras Innovator installed (version 25 till 30)
 2. [Aras Update](http://www.aras.com/support/downloads/) installed (version 1.18 or later)
-3. CUI Application Solution (version 1.0.0) - [download here](https://github.com/EmilGramDK/Aras-CUI_Application/releases/download/V1.0.0/Aras-CUI_Application_V1.0.0.zip)
+3. CUI Application Solution (version 0.1.0)
 
 ### Install Steps
 

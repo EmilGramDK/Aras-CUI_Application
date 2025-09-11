@@ -1,0 +1,9 @@
+{
+  "extends": "@emilgramdk/web/tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "types": ["arasjs/types"]
+  },
+  "include": ["**/*.ts", "**/*.js"],
+  "exclude": ["node_modules"]
+}

@@ -63,7 +63,11 @@ class CuiAppLayout extends CuiLayout {
     if (!switcher) return;
 
     const iframe = document.createElement("iframe");
-    iframe.classList.add("aras-switcher-pane_border_none", "aras-switcher-pane", "aras-switcher-pane_active");
+    iframe.classList.add(
+      "aras-switcher-pane_border_none",
+      "aras-switcher-pane",
+      "aras-switcher-pane_active",
+    );
     iframe.id = this.appItem.id;
     iframe.src = this.appItem.page_url;
     iframe.setAttribute("aria-hidden", "false");
@@ -215,7 +219,7 @@ class CuiAppLayout extends CuiLayout {
       `CUI_Application_Toolbar_Items
       ?$filter=source_id eq '${itemId}'
       &$expand=related_id($select=id,name,label,tooltip_template,image,additional_data,on_click_handler,on_init_handler)
-      &$select=id,location,sort_order`
+      &$select=id,location,sort_order`,
     );
 
     const formattedItems = items.value.map((item) => {
@@ -247,8 +251,12 @@ class CuiAppLayout extends CuiLayout {
   async #fetchItemAndPages() {
     const itemId = this.options.itemId;
     const promises = [
-      ArasModules.odataFetch(`CUI_Application('${itemId}')?$expand=init_method($select=id,method_type)`),
-      ArasModules.odataFetch(`CUI_Application_Pages?$filter=source_id eq '${itemId}'&$orderby=sort_order`),
+      ArasModules.odataFetch(
+        `CUI_Application('${itemId}')?$expand=init_method($select=id,method_type)`,
+      ),
+      ArasModules.odataFetch(
+        `CUI_Application_Pages?$filter=source_id eq '${itemId}'&$orderby=sort_order`,
+      ),
     ];
 
     const [item, pages] = await Promise.all(promises);
@@ -318,7 +326,7 @@ class CuiAppLayout extends CuiLayout {
     const permissionId = this.appItem.permission_id;
 
     const favorite = Object.values(favorites).find(
-      (item) => item.additional_data.id === this.appItem.id && item.category === "Item"
+      (item) => item.additional_data.id === this.appItem.id && item.category === "Item",
     );
 
     return {

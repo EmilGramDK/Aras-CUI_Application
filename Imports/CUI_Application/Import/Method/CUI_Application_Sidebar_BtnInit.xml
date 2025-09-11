@@ -2,84 +2,30 @@
  <Item type="Method" id="60C480D8C49E485AB5CCCD8B2A97E4EA" action="add">
   <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
   <method_code><![CDATA[/**
- * CUI_Application Aras Solution V1.0.0
+ * CUI_Application Aras Solution V0.1.0
  * More Info: https://github.com/EmilGramDK/Aras-CUI_Application
  *
- * Method: CUI_Application_Sidebar_BtnInit
+ * Method: CUI_Application_SidebarInit
  * Created By: Emil Gram
  * Created On: 17-02-2025
  *
- * This method initializes a global toolbar button and determines if an application
- * should be opened automatically based on the `openapp` query parameter.
- * If no application is specified, it checks if at least one application exists.
- *
- * Return:
- * - `{ hidden: false }` if at least one application exists.
- * - `{ hidden: true }` if no applications exists.
+ * This method initializes a global toolbar button and 
+ * a sidebar with applications.
  */
 
-if (!checkForAppItems()) return { hidden: true };
+if (window.appsSidebar) return;
 
 initScriptsAndStyles();
 
-checkOpenStartApplication();
-
-/**
- * Attempts to open an application if specified in the URL query parameter (`openapp`).
- * Retrieves the application ID using the `url_slug` property.
- *
- * @returns {boolean} `true` if an application is found and opened, otherwise `false`.
- */
-function checkOpenStartApplication() {
-  const url = new URL(window.location.href.toLowerCase());
-  const startApp = url.searchParams.get("openapp");
-
-  if (!startApp) return false; // No application specified in the URL
-
-  const item = aras.newIOMItem("CUI_Application", "get");
-  item.setAttribute("maxRecords", 1);
-  item.setAttribute("select", "id");
-  item.setProperty("url_slug", startApp);
-
-  const response = item.apply();
-  if (response.getItemCount() !== 1) return false; // No matching application found
-
-  aras.uiShowItem("CUI_Application", response.getID()); // Open the found application
-
-  // Remove 'openapp' from the URL without triggering a page reload
-  url.searchParams.delete("openapp");
-  window.history.replaceState({}, document.title, url.toString());
-
-  return true;
-}
-
-/**
- * Checks if at least one `CUI_Application` item exists in the system.
- *
- * @returns {boolean} `true` if at least one application exists, otherwise `false`.
- */
-function checkForAppItems() {
-  const items = aras.newIOMItem("CUI_Application", "get");
-  items.setAttribute("maxRecords", 1);
-  items.setAttribute("select", "id");
-
-  const response = items.apply();
-  return response.getItemCount() > 0;
-}
-
 function initScriptsAndStyles() {
-  if (["pending", "resolved"].includes(window.CuiAppSidebarStatus)) return;
-
   const mainViewStyles = document.createElement("link");
-  mainViewStyles.href = "../Solutions/CUI_Application/styles/mainView.css?ver=1.0.0";
+  mainViewStyles.href = "../Solutions/CUI_Application/styles/mainView.css";
   mainViewStyles.rel = "stylesheet";
-  mainViewStyles.id = "cui-app-mainview-styles";
   document.head.appendChild(mainViewStyles);
 
   const mainViewScript = document.createElement("script");
   mainViewScript.type = "module";
-  mainViewScript.src = "../Solutions/CUI_Application/Scripts/mainView.js?ver=1.0.0";
-  mainViewScript.id = "cui-app-mainview-script";
+  mainViewScript.src = "../Solutions/CUI_Application/Scripts/mainView.js";
   document.head.appendChild(mainViewScript);
 }
 
@@ -88,6 +34,6 @@ return {
   label: "Applications"
 };]]></method_code>
   <method_type>JavaScript</method_type>
-  <name>CUI_Application_Sidebar_BtnInit</name>
+  <name>CUI_Application_SidebarInit</name>
  </Item>
 </AML>

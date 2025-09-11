@@ -1,6 +1,6 @@
 ﻿<AML>
  <Item type="cui_Control" id="F1DB84EC6BD1475B9264D5C0E4027F75" action="add">
-  <additional_data>{"layout":{"Column Set 5":{"type":"columnSet","name":"Column Set 5","children":["Column 17","Column 18","Column 19"],"wrapped":true},"Column 17":{"type":"column","name":"Column 17","children":["name"],"ratio":"1","minWidth":72},"Column 18":{"type":"column","name":"Column 18","children":["description"],"ratio":"2","minWidth":72},"Column 19":{"type":"column","name":"Column 19","children":["tab_label"],"ratio":1,"minWidth":72},"Column Set 11":{"type":"columnSet","name":"Column Set 11","children":["Column 36","Column 37","Column 38","Column 39"],"wrapped":true},"Column 36":{"type":"column","name":"Column 36","children":["classification"],"ratio":"2","minWidth":72},"Column 37":{"type":"column","name":"Column 37","children":["url_slug"],"ratio":"2","minWidth":72},"Column 38":{"type":"column","name":"Column 38","children":["owned_by_id"],"ratio":"2","minWidth":72},"Column 39":{"type":"column","name":"Column 39","children":["app_order"],"ratio":1,"minWidth":72},"Column Set 12":{"type":"columnSet","name":"Column Set 12","children":["Column 40","Column 41","Column 42","Column 43"],"wrapped":true},"Column 40":{"type":"column","name":"Column 40","children":["color"],"ratio":1,"minWidth":72},"Column 41":{"type":"column","name":"Column 41","children":["active_color"],"ratio":1,"minWidth":72},"Column 42":{"type":"column","name":"Column 42","children":["icon"],"ratio":"4","minWidth":72},"Column 43":{"type":"column","name":"Column 43","children":["init_method"],"ratio":"2","minWidth":72},"Column Set 13":{"type":"columnSet","name":"Column Set 13","children":["Column 44","Column 45"],"wrapped":true},"Column 44":{"type":"column","name":"Column 44","children":["is_hidden"],"ratio":1,"minWidth":72},"Column 45":{"type":"column","name":"Column 45","children":["show_sidebar"],"ratio":1,"minWidth":72}},"order":["Column Set 11","Column Set 5","Column Set 12","Column Set 13","css"]}</additional_data>
+  <additional_data>{"layout":{"Column Set 5":{"type":"columnSet","name":"Column Set 5","children":["Column 17","Column 18","Column 19"],"wrapped":true},"Column 17":{"type":"column","name":"Column 17","children":["name"],"ratio":"1","minWidth":72},"Column 18":{"type":"column","name":"Column 18","children":["description"],"ratio":"2","minWidth":72},"Column 19":{"type":"column","name":"Column 19","children":["tab_label"],"ratio":1,"minWidth":72},"Column Set 11":{"type":"columnSet","name":"Column Set 11","children":["Column 36","Column 37","Column 38","Column 39"],"wrapped":true},"Column 36":{"type":"column","name":"Column 36","children":["classification"],"ratio":"2","minWidth":72},"Column 37":{"type":"column","name":"Column 37","children":["url_slug"],"ratio":"2","minWidth":72},"Column 38":{"type":"column","name":"Column 38","children":["owned_by_id"],"ratio":"2","minWidth":72},"Column 39":{"type":"column","name":"Column 39","children":["app_order"],"ratio":1,"minWidth":72},"Column Set 12":{"type":"columnSet","name":"Column Set 12","children":["Column 40","Column 41","Column 42","Column 43"],"wrapped":true},"Column 40":{"type":"column","name":"Column 40","children":["color"],"ratio":1,"minWidth":72},"Column 41":{"type":"column","name":"Column 41","children":["active_color"],"ratio":1,"minWidth":72},"Column 42":{"type":"column","name":"Column 42","children":["icon"],"ratio":"4","minWidth":72},"Column 43":{"type":"column","name":"Column 43","children":["init_method"],"ratio":"2","minWidth":72},"Column Set 13":{"type":"columnSet","name":"Column Set 13","children":["Column 44","Column 45"],"wrapped":true},"Column 44":{"type":"column","name":"Column 44","children":["is_hidden"],"ratio":1,"minWidth":72},"Column 45":{"type":"column","name":"Column 45","children":["show_sidebar"],"ratio":1,"minWidth":72}},"order":["Column Set 11","Column Set 5","Column Set 12","Column Set 13","app_css"]}</additional_data>
   <control_type>FormControl</control_type>
   <parent_control keyed_name="ItemView.FormTab_6C6B5EDBB53F4762A582D8D4AD3418AB" type="cui_Control">6C6B5EDBB53F4762A582D8D4AD3418AB</parent_control>
   <sealed>0</sealed>
@@ -140,9 +140,9 @@
    </Item>
    <Item type="cui_ControlFormField" id="304FFECEA1604F4F9B15EB14214BF134" action="add">
     <action>Add</action>
-    <related_id keyed_name="css" type="cui_FormField">
+    <related_id keyed_name="app_css" type="cui_FormField">
      <Item type="cui_FormField" id="2D2B634D6E1E459A9CEE94E1C042EE7A" action="add">
-      <data_source>css</data_source>
+      <data_source>app_css</data_source>
       <description xml:lang="en">You can add Custom CSS that will be injected into the Application View</description>
       <disabled>0</disabled>
       <field_type>textarea</field_type>
@@ -153,7 +153,7 @@
       <required>1</required>
       <show_help>1</show_help>
       <show_label>1</show_label>
-      <name>css</name>
+      <name>app_css</name>
      </Item>
     </related_id>
     <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
@@ -244,6 +244,27 @@
     </related_id>
     <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
     <sort_order>2176</sort_order>
+    <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
+   </Item>
+   <Item type="cui_ControlFormField" id="691A777FB34047DD9588FE5314425B20" action="add">
+    <action>Add</action>
+    <related_id keyed_name="sort_order" type="cui_FormField">
+     <Item type="cui_FormField" id="9C0735C3C136436B939CF5786343D808" action="add">
+      <data_source>sort_order</data_source>
+      <disabled>0</disabled>
+      <field_type>integer</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>sort_order</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>2304</sort_order>
     <source_id keyed_name="ItemView.Form_F1DB84EC6BD1475B9264D5C0E4027F75" type="cui_Control">F1DB84EC6BD1475B9264D5C0E4027F75</source_id>
    </Item>
    <Item type="cui_ControlFormField" id="8DDC720A6D544DBD92A1704F89787ACB" action="add">

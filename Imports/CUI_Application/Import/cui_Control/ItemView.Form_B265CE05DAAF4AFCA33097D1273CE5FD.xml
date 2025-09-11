@@ -247,6 +247,27 @@
     <sort_order>1536</sort_order>
     <source_id keyed_name="ItemView.Form_B265CE05DAAF4AFCA33097D1273CE5FD" type="cui_Control">B265CE05DAAF4AFCA33097D1273CE5FD</source_id>
    </Item>
+   <Item type="cui_ControlFormField" id="C16DF8F004B347928E31FF79AD8445EF" action="add">
+    <action>Add</action>
+    <related_id keyed_name="sort_order" type="cui_FormField">
+     <Item type="cui_FormField" id="DAB6AE3366734C6AB1D219A4FC0EAFA3" action="add">
+      <data_source>sort_order</data_source>
+      <disabled>0</disabled>
+      <field_type>integer</field_type>
+      <hidden>0</hidden>
+      <override_prop_readonly>0</override_prop_readonly>
+      <override_prop_required>0</override_prop_required>
+      <readonly>1</readonly>
+      <required>1</required>
+      <show_help>1</show_help>
+      <show_label>1</show_label>
+      <name>sort_order</name>
+     </Item>
+    </related_id>
+    <role keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</role>
+    <sort_order>1664</sort_order>
+    <source_id keyed_name="ItemView.Form_B265CE05DAAF4AFCA33097D1273CE5FD" type="cui_Control">B265CE05DAAF4AFCA33097D1273CE5FD</source_id>
+   </Item>
    <Item type="cui_ControlFormField" id="EA31F650EF7E4052B5D81A8B9A9FBC1C" action="add">
     <action>Add</action>
     <related_id keyed_name="is_hidden" type="cui_FormField">
