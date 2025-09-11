@@ -43,9 +43,6 @@ body {
   overflow: hidden;
 }
 
-/* .aras-item-view__viewers-tabs.aras-tabs_b {
-  width: 3rem !important;
-} */
 .aras-item-view__viewers-tabs.aras-tabs_b .aras-tabs__tab {
   padding: 5px !important;
 }
@@ -58,17 +55,3 @@ body {
 .aras-viewers-tabs .aras-tabs__tab:not(.aras-tabs__tab_active):hover {
   background: var(--item-type-active-color) !important;
 }
-
-/* .aras-tabs__tab.aras-tabs__tab_active::before {
-  z-index: 2;
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -15px;
-  transform: translateY(-50%);
-  border-top: 16px solid transparent;
-  border-bottom: 16px solid transparent;
-  border-left: 16px solid var(--item-type-color);
-  border-radius: 2px;
-  opacity: 0.75;
-} */

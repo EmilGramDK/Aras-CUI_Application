@@ -1,5 +1,5 @@
 /**
- * CUI_Application Aras Solution V1.0.0
+ * CUI_Application Aras Solution V0.1.0
  * More Info: https://github.com/EmilGramDK/Aras-CUI_Application
  *
  * Class:         CuiAppLayout
@@ -52,7 +52,7 @@ class CuiAppLayout extends CuiLayout {
   #updateTitleTab() {
     top?.window.arasTabs.updateTitleTab(window.name, {
       label: this.appItem.tab_label || this.appItem.name,
-      image: this.appItem.icon || "../Solutions/CUI_Application/images/default_icon.svg?ver=1.0.0",
+      image: this.appItem.icon || "../Solutions/CUI_Application/images/default_icon.svg",
     });
   }
 
@@ -144,7 +144,7 @@ class CuiAppLayout extends CuiLayout {
       CommandBarItems: [
         {
           name: "appview.titlebar.appicon",
-          image: this.appItem.icon || "../Solutions/CUI_Application/images/default_icon.svg?ver=1.0.0",
+          image: this.appItem.icon || "../Solutions/CUI_Application/images/default_icon.svg",
           type: "image",
           cssClass: "aras-toolbar__icon",
           tooltip_template: this.appItem.name,
@@ -193,7 +193,7 @@ class CuiAppLayout extends CuiLayout {
       name: page.name,
       tooltip_template: page.label,
       label: page.label,
-      image: page.icon || "../Solutions/CUI_Application/images/default_tab.svg?ver=1.0.0",
+      image: page.icon || "../Solutions/CUI_Application/images/default_tab.svg",
       sort_order: page.sort_order || 0,
       cssClass: page.is_hidden === "1" ? "cui_app-hidden" : "",
       ...(page.image_additional ? { image_additional: page.active_icon } : {}),
@@ -259,7 +259,7 @@ class CuiAppLayout extends CuiLayout {
       : [
           {
             name: "demo_page",
-            page_url: "../Solutions/CUI_Application/html/demo.html?ver=1.0.0",
+            page_url: "../Solutions/CUI_Application/html/demo.html",
             is_default: "1",
             label: "Demo Page",
           },
@@ -276,14 +276,14 @@ class CuiAppLayout extends CuiLayout {
     if (document.getElementById("aras-cui-app-itemview-styles")) return;
     const style = document.createElement("style");
     style.id = "aras-cui-app-itemview-styles";
-    style.innerHTML = this.appItem.css || "";
+    style.innerHTML = this.appItem.app_css || "";
     document.head.appendChild(style);
   }
 
   #appendCssToIframe(iframe) {
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = window.aras.getBaseURL("/Solutions/CUI_Application/styles/itemPage.css?ver=1.0.0");
+    link.href = window.aras.getBaseURL("/Solutions/CUI_Application/styles/itemPage.css");
     iframe.addEventListener("load", () => {
       iframe.contentDocument?.head.prepend(link);
     });

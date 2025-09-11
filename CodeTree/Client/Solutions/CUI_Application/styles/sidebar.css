@@ -3,22 +3,8 @@
 /** Adds styling to the sidebar of the main view of Aras Innovator
 /**/
 
-#cui_app-sidebar-overlay {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 28rem;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  display: none;
-}
-#cui_app-sidebar-overlay.cui_app-sidebar-open {
-  display: block;
-}
-
-.cui_app-sidebar {
-  z-index: 1;
+.cui-app-sidebar {
+  z-index: 10;
   width: 28rem;
   height: 100%;
   position: absolute;
@@ -29,7 +15,7 @@
   visibility: hidden;
   transform: translateX(-100%);
 }
-.cui_app-sidebar * {
+.cui-app-sidebar * {
   box-sizing: border-box;
   padding: 0;
   border: 0;
@@ -37,7 +23,8 @@
   font: inherit;
   user-select: none;
 }
-.cui_app-sidebar-open {
+
+.cui-app-sidebar[expanded] {
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   transition-property: transform, visibility, width;
@@ -48,7 +35,7 @@
   opacity: 1 !important;
 }
 
-.cui_app-sidebar-header {
+.cui-app-sidebar-header {
   padding: 1rem;
   font-size: 1.375rem;
   font-weight: 600;
@@ -59,7 +46,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.cui_app-sidebar-header button {
+.cui-app-sidebar-header button {
   background: white;
   color: #374151;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12) !important;
@@ -71,16 +58,16 @@
   padding: 4px 12px;
   font-weight: 500;
 }
-.cui_app-sidebar-header button:hover {
+.cui-app-sidebar-header button:hover {
   background-color: #f7f7f7 !important;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.32) !important;
 }
-.cui_app-sidebar-content {
+.cui-app-sidebar-content {
   padding: 1rem;
   overflow-y: auto;
   height: calc(100% - 50px - 1rem);
 }
-.cui_app-sidebar-item {
+.cui-app-sidebar-item {
   height: 65px;
   padding: 0.5rem 1rem 0.5rem 0.75rem;
   display: flex;
@@ -93,10 +80,15 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   transition: background-color 0.15s;
+
+  img {
+    width: 42px;
+    height: 42px;
+  }
 }
-.cui_app-sidebar-item:hover {
+.cui-app-sidebar-item:hover {
   background-color: #f3f4f6;
-  .cui_app-sidebar-item-arrow {
+  .cui-app-sidebar-item-arrow {
     opacity: 1;
     border-color: #4c51bf;
   }
@@ -105,12 +97,7 @@
   }
 }
 
-.cui_app-sidebar-item-icon,
-.cui_app-sidebar-item-icon img {
-  width: 42px;
-  height: 42px;
-}
-.cui_app-sidebar-item-arrow {
+.cui-app-sidebar-item-arrow {
   border: solid black;
   opacity: 0.4;
   border-width: 0 3px 3px 0;
@@ -120,13 +107,13 @@
   -webkit-transform: rotate(-45deg);
   margin-left: 0.5rem;
 }
-.cui_app-sidebar-item-text {
+.cui-app-sidebar-item-text {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.cui_app-sidebar-item h4 {
+.cui-app-sidebar-item h4 {
   margin: 0;
   font-size: 1.25rem;
   font-weight: 600;
@@ -143,7 +130,7 @@
     content: "\2605";
   }
 }
-.cui_app-sidebar-item p {
+.cui-app-sidebar-item p {
   margin: 0;
   font-size: 0.9rem;
   color: #5c5c5c;

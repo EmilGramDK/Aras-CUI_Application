@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <base href="@Url.ContentWithSalt("~/scripts/")" />     
     <script type="text/javascript" src="@Url.ContentWithSalt("~/javascript/include.aspx?classes=ArasModules,ScriptSet1")"></script>
-    <script type="text/javascript" src="@Url.ContentWithSalt("~/Solutions/CUI_Application/Scripts/itemView.js?ver=1.0.0")"></script>
-    <script type="module" src="@Url.ContentWithSalt("~/Solutions/CUI_Application/Scripts/CuiAppLayout.js?ver=1.0.0")"></script>
+    <script type="text/javascript" src="@Url.ContentWithSalt("~/Solutions/CUI_Application/Scripts/itemView.js")"></script>
+    <script type="module" src="@Url.ContentWithSalt("~/Solutions/CUI_Application/Scripts/layout.js")"></script>
     
     <script type="module">
       const layoutNode = document.getElementById("BorderContainer");
@@ -24,7 +24,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="@Url.ContentWithSalt("~/Solutions/CUI_Application/styles/itemView.css?ver=1.0.0")" />
+      href="@Url.ContentWithSalt("~/Solutions/CUI_Application/styles/itemView.css")" />
   </head>
   <body>
     <aras-spinner class="aras-item-view" active>

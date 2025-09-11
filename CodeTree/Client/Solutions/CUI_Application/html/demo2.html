@@ -8,6 +8,7 @@
       window.aras = parent.aras;
       window.layout = parent.layout;
     </script>
+    <link rel="stylesheet" href="../../../javascript/include.aspx?classes=common.min.css,cuiLayout.css" />
     <style>
       * {
         box-sizing: border-box;
@@ -44,7 +45,8 @@
     </style>
     <script>
       const openMethod = () => {
-        top.aras.uiShowItem("Method", "4906782098084C23A000FFF40B1A0481");
+        const methodNd = aras.MetadataCache.GetClientMethodNd("CUI_Application_DemoAppBtnClick", "name");
+        top.aras.uiShowItemEx(methodNd);
       };
     </script>
   </head>
@@ -55,7 +57,8 @@
       <p>Check out the method below by clicking the button.</p>
       <pre
         class="button"
-        onclick="openMethod();"><img src="../../../images/Method.svg" width="24"><b>CUI_Application_DemoAppBtnClick</b></pre>
+        onclick="openMethod();"
+      ><img src="../../../images/Method.svg" width="24"><b>CUI_Application_DemoAppBtnClick</b></pre>
     </div>
 
     <div class="absolute-bottom">
