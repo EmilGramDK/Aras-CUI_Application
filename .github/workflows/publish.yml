@@ -17,5 +17,10 @@ jobs:
       - name: Build Solution
         run: bun run build
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "hi@emilgram.dk"
+          git config --global user.name "EmilGramDK"
+
       - name: Push version update
         run: git push --follow-tags
