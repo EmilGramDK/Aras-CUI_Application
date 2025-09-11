@@ -5,7 +5,7 @@
       "name": "aras-cui_application",
       "devDependencies": {
         "@emilgramdk/web": "^0.0.31",
-        "arasjs": "^0.0.79",
+        "arasjs": "^0.0.80",
         "prettier": "^3.6.2",
         "typescript": "^5.9.2",
       },
@@ -110,7 +110,7 @@
 
     "@types/estree": ["@types/estree@1.0.8", "", {}, "sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w=="],
 
-    "arasjs": ["arasjs@0.0.79", "", { "peerDependencies": { "@emilgramdk/web": ">=0.0.5" } }, "sha512-wLdb9ZhPUV+DFi/Xd/hRVlop/QbGAMWz5JUXFT1j2pMM3XAhM8mwsEm0Vh7NQu5UCLAQoMxoLamZB+auduoW2Q=="],
+    "arasjs": ["arasjs@0.0.80", "", { "peerDependencies": { "@emilgramdk/web": ">=0.0.5" } }, "sha512-piJh4NYDEFndT+ro0ascNj3TAonWBWhbFoFL0Pe45QkZ42Gc3XbfE9KX1tn5eL3kJ4HcpLbX92o0Du8blHw9iQ=="],
 
     "asynckit": ["asynckit@0.4.0", "", {}, "sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q=="],
 

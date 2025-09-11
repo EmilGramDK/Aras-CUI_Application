@@ -14,7 +14,7 @@ var itemTemplate = (item) => `
 
 class CUIAppMainSidebar {
   isAdmin;
-  favorites = new Set;
+  favorites = new Set();
   items = [];
   sidebar = document.createElement("div");
   header = document.createElement("div");
@@ -30,16 +30,14 @@ class CUIAppMainSidebar {
     this.sidebar.toggleAttribute("expanded", force);
   }
   async refreshItems(fetch = false) {
-    if (fetch)
-      await this.fetchItems();
+    if (fetch) await this.fetchItems();
     this.getFavorites();
     this.updateSidebarItems();
   }
   openAdminSearch() {
     this.toggleSidebar(false);
     const currentTab = arasTabs.tabs.find((tab) => tab.startsWith(`search_${CUIAPPItemTypeID}`));
-    if (currentTab)
-      return arasTabs.selectTab(currentTab);
+    if (currentTab) return arasTabs.selectTab(currentTab);
     arasTabs.openSearch(CUIAPPItemTypeID);
   }
   setupSidebar() {
@@ -59,18 +57,18 @@ class CUIAppMainSidebar {
     window.addEventListener("keydown", this.keyHandler.bind(this));
   }
   updateSidebarItems() {
-    const sortedApps = this.items.map((item) => {
-      return {
-        ...item,
-        isFavorite: this.favorites.has(item.id)
-      };
-    }).sort((a, b) => {
-      if (a.isFavorite && !b.isFavorite)
-        return -1;
-      if (!a.isFavorite && b.isFavorite)
-        return 1;
-      return a.name.localeCompare(b.name);
-    });
+    const sortedApps = this.items
+      .map((item) => {
+        return {
+          ...item,
+          isFavorite: this.favorites.has(item.id),
+        };
+      })
+      .sort((a, b) => {
+        if (a.isFavorite && !b.isFavorite) return -1;
+        if (!a.isFavorite && b.isFavorite) return 1;
+        return a.name.localeCompare(b.name);
+      });
     this.content.innerHTML = sortedApps.map(itemTemplate).join("");
   }
   async fetchItems() {
@@ -86,71 +84,57 @@ class CUIAppMainSidebar {
     const state = store.getState();
     const favorites = state.favorites;
     Object.values(favorites).forEach((favorite) => {
-      if (!favorite.additional_data)
-        return;
+      if (!favorite.additional_data) return;
       this.favorites.add(favorite.additional_data.id);
     });
   }
   clickHandler(event) {
     const target = event.target;
     const headerBtn = this.getHeaderButton();
-    if (!target || !headerBtn)
-      return;
-    if (headerBtn.contains(target))
-      return this.toggleSidebar();
-    if (this.adminBtn && this.adminBtn.contains(target))
-      return this.openAdminSearch();
-    if (this.content.contains(target))
-      return this.openItem(target);
-    if (this.sidebar.contains(target))
-      return;
+    if (!target || !headerBtn) return;
+    if (headerBtn.contains(target)) return this.toggleSidebar();
+    if (this.adminBtn && this.adminBtn.contains(target)) return this.openAdminSearch();
+    if (this.content.contains(target)) return this.openItem(target);
+    if (this.sidebar.contains(target)) return;
     this.toggleSidebar(false);
   }
   openItem(target) {
     const itemElement = target.closest("[data-id]");
-    if (!itemElement)
-      return;
+    if (!itemElement) return;
     const itemId = itemElement.getAttribute("data-id");
-    if (!itemId)
-      return;
+    if (!itemId) return;
     aras.uiShowItem(CUIAPPItemType, itemId);
     this.toggleSidebar(false);
   }
   getHeaderButton() {
-    if (this.headerBtn)
-      return this.headerBtn;
+    if (this.headerBtn) return this.headerBtn;
     const btn = document.querySelector("#headerCommandsBar .cui-app-button");
-    if (!btn)
-      return;
+    if (!btn) return;
     this.headerBtn = btn;
     return this.headerBtn;
   }
   keyHandler(event) {
-    if (!this.sidebar.hasAttribute("expanded") || event.key !== "Escape")
-      return;
+    if (!this.sidebar.hasAttribute("expanded") || event.key !== "Escape") return;
     this.toggleSidebar(false);
   }
 }
 
 // CodeTree/Client/Solutions/CUI_Application/Scripts/mainView.ts
 function initCUIApp() {
-  if (window.appsSidebar)
-    return;
-  window.appsSidebar = new CUIAppMainSidebar;
+  if (window.appsSidebar) return;
+  window.appsSidebar = new CUIAppMainSidebar();
   checkOpenStartApplication();
 }
 function checkOpenStartApplication() {
   const url = new URL(window.location.href.toLowerCase());
   const startApp = url.searchParams.get("openapp");
-  if (!startApp)
-    return;
+  if (!startApp) return;
   const item = aras.newIOMItem("CUI_Application", "get");
   item.setAttribute("maxRecords", "1");
   item.setAttribute("select", "id");
   item.setProperty("url_slug", startApp);
   const response = item.apply();
-  if (response.getItemCount() !== 1)
-    return;
+  if (response.getItemCount() !== 1) return;
   aras.uiShowItem("CUI_Application", response.getID());
   url.searchParams.delete("openapp");
   window.history.replaceState({}, document.title, url.toString());

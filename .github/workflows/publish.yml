@@ -14,7 +14,10 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
 
-      - name: Build
+      - name: Format Code
+        run: bun run format
+
+      - name: Build Solution
         run: bun run build
 
       - name: Configure Git

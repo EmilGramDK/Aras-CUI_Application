@@ -7,13 +7,17 @@
 
 .aras-header {
   background: #f9fafb;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.12);
   padding-left: 12px;
   padding-right: 4px;
 }
 .aras-header .aras-button {
   background: white !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12) !important;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.12) !important;
   border-radius: 0.375rem;
   font-weight: 500;
   font-size: 14px;
@@ -36,7 +40,9 @@
 }
 .aras-header .aras-button:hover {
   background-color: #f7f7f7 !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.32) !important;
+  box-shadow:
+    0 1px 4px rgba(0, 0, 0, 0.16),
+    0 1px 3px rgba(0, 0, 0, 0.32) !important;
 }
 
 /* Hide the logo on small screens */

@@ -28,7 +28,9 @@
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   transition-property: transform, visibility, width;
-  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2), 1px 0 3px rgba(0, 0, 0, 0.24);
+  box-shadow:
+    2px 0 4px rgba(0, 0, 0, 0.2),
+    1px 0 3px rgba(0, 0, 0, 0.24);
   box-sizing: border-box;
   transform: translateX(0);
   visibility: visible !important;
@@ -49,7 +51,9 @@
 .cui-app-sidebar-header button {
   background: white;
   color: #374151;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12) !important;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.12) !important;
   border-radius: 0.375rem;
   font-weight: 500;
   font-size: 14px;
@@ -60,7 +64,9 @@
 }
 .cui-app-sidebar-header button:hover {
   background-color: #f7f7f7 !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.32) !important;
+  box-shadow:
+    0 1px 4px rgba(0, 0, 0, 0.16),
+    0 1px 3px rgba(0, 0, 0, 0.32) !important;
 }
 .cui-app-sidebar-content {
   padding: 1rem;
@@ -77,7 +83,9 @@
   border-radius: 0.375rem;
   outline: 1px solid #d1d5dc;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   transition: background-color 0.15s;
 

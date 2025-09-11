@@ -4,12 +4,13 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "build": "bun build ./CodeTree/Client/Solutions/CUI_Application/Scripts/mainView.ts --outdir ./CodeTree/Client/Solutions/CUI_Application/Scripts"
+    "build": "bun build ./CodeTree/Client/Solutions/CUI_Application/Scripts/mainView.ts --outdir ./CodeTree/Client/Solutions/CUI_Application/Scripts",
+    "format": "prettier --write 'CodeTree/**/*.{ts,mts,tsx,js,json,md,css,html}'"
   },
   "dependencies": {},
   "devDependencies": {
     "@emilgramdk/web": "^0.0.31",
-    "arasjs": "^0.0.79",
+    "arasjs": "^0.0.80",
     "prettier": "^3.6.2",
     "typescript": "^5.9.2"
   },
