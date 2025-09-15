@@ -13,7 +13,7 @@ type Item = {
   id: string;
   name: string;
   description: string;
-  icon?: string;
+  app_icon?: string;
   isFavorite: boolean;
 };
 
@@ -23,7 +23,7 @@ const CUIAPPItemType = "CUI_Application";
 const defaultIcon = "../Solutions/CUI_Application/images/default_icon.svg";
 const itemTemplate = (item: Item) => `
   <div class="cui-app-sidebar-item" data-id="${item.id}">
-    <img src="${item.icon || defaultIcon}" />
+    <img src="${item.app_icon || defaultIcon}" />
     <div class="cui-app-sidebar-item-text">
       <h4>${item.isFavorite ? "<span />" : ""} ${item.name}</h4>
       <p>${item.description}</p>

@@ -4,7 +4,7 @@ var CUIAPPItemType = "CUI_Application";
 var defaultIcon = "../Solutions/CUI_Application/images/default_icon.svg";
 var itemTemplate = (item) => `
   <div class="cui-app-sidebar-item" data-id="${item.id}">
-    <img src="${item.icon || defaultIcon}" />
+    <img src="${item.app_icon || defaultIcon}" />
     <div class="cui-app-sidebar-item-text">
       <h4>${item.isFavorite ? "<span />" : ""} ${item.name}</h4>
       <p>${item.description}</p>

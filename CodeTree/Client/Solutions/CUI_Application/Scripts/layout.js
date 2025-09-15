@@ -52,7 +52,7 @@ class CuiAppLayout extends CuiLayout {
   #updateTitleTab() {
     top?.window.arasTabs.updateTitleTab(window.name, {
       label: this.appItem.tab_label || this.appItem.name,
-      image: this.appItem.icon || "../Solutions/CUI_Application/images/default_icon.svg",
+      image: this.appItem.app_icon || "../Solutions/CUI_Application/images/default_icon.svg",
     });
   }
 
@@ -148,7 +148,7 @@ class CuiAppLayout extends CuiLayout {
       CommandBarItems: [
         {
           name: "appview.titlebar.appicon",
-          image: this.appItem.icon || "../Solutions/CUI_Application/images/default_icon.svg",
+          image: this.appItem.app_icon || "../Solutions/CUI_Application/images/default_icon.svg",
           type: "image",
           cssClass: "aras-toolbar__icon",
           tooltip_template: this.appItem.name,
