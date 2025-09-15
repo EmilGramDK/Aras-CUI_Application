@@ -76,7 +76,11 @@ class CUIAppMainSidebar {
   async fetchItems() {
     try {
       const appsFetch = await ArasModules.odataFetch("CUI_Application");
-      this.items = appsFetch.value;
+      this.items = appsFetch.value.map((app) => ({
+        ...app,
+        app_order: app.app_order || 9999
+      }));
+      this.items.sort((a, b) => a.app_order < b.app_order ? -1 : 1);
     } catch (error) {
       console.error("Error fetching items:", error);
     }
