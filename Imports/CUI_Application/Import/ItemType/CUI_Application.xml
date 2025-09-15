@@ -60,6 +60,27 @@
     <track_history>0</track_history>
     <name>app_css</name>
    </Item>
+   <Item type="Property" id="36F1859A903F4E94BC6863A43881587F" action="add">
+    <column_alignment>left</column_alignment>
+    <column_width>65</column_width>
+    <data_type>string</data_type>
+    <default_value xml:lang="en">../Solutions/CUI_Application/images/default_icon.svg</default_value>
+    <is_federated>0</is_federated>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Icon</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>10</sort_order>
+    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
+    <stored_length>128</stored_length>
+    <track_history>0</track_history>
+    <name>app_icon</name>
+   </Item>
    <Item type="Property" id="0E0CA2CFD7714CA6A038FAF74861A63E" action="add">
     <column_alignment>left</column_alignment>
     <data_type>integer</data_type>
@@ -118,26 +139,6 @@
     <stored_length>128</stored_length>
     <track_history>0</track_history>
     <name>description</name>
-   </Item>
-   <Item type="Property" id="36F1859A903F4E94BC6863A43881587F" action="add">
-    <column_alignment>left</column_alignment>
-    <column_width>65</column_width>
-    <data_type>image</data_type>
-    <default_value xml:lang="en" />
-    <is_federated>0</is_federated>
-    <is_hidden>1</is_hidden>
-    <is_hidden2>1</is_hidden2>
-    <is_indexed>0</is_indexed>
-    <is_keyed>0</is_keyed>
-    <is_multi_valued>0</is_multi_valued>
-    <is_required>0</is_required>
-    <label xml:lang="en">Icon</label>
-    <range_inclusive>0</range_inclusive>
-    <readonly>0</readonly>
-    <sort_order>10</sort_order>
-    <source_id keyed_name="CUI_Application" type="ItemType" name="CUI_Application">772CE3BCA6B54634AF93EB25828EC350</source_id>
-    <track_history>0</track_history>
-    <name>icon</name>
    </Item>
    <Item type="Property" id="3FFF0EB855BE44FE8ED999BF12BEE03A" action="add">
     <column_alignment>left</column_alignment>

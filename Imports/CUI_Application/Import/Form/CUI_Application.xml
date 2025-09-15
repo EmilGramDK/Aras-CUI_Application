@@ -49,7 +49,7 @@
       <label xml:lang="en">Icon</label>
       <label_position>top</label_position>
       <list_no_blank>0</list_no_blank>
-      <propertytype_id keyed_name="icon" type="Property">36F1859A903F4E94BC6863A43881587F</propertytype_id>
+      <propertytype_id keyed_name="app_icon" type="Property">36F1859A903F4E94BC6863A43881587F</propertytype_id>
       <show_help>1</show_help>
       <sort_order>128</sort_order>
       <source_id keyed_name="87DC1BF207B74E2B8EBB3086E479F356" type="Body">87DC1BF207B74E2B8EBB3086E479F356</source_id>
