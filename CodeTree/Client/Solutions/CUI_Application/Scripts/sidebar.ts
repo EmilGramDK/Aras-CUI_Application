@@ -13,8 +13,9 @@ type Item = {
   id: string;
   name: string;
   description: string;
-  app_icon?: string;
   isFavorite: boolean;
+  app_order?: number;
+  app_icon?: string;
 };
 
 const CUIAPPItemTypeID = "772CE3BCA6B54634AF93EB25828EC350";
@@ -102,7 +103,11 @@ export class CUIAppMainSidebar {
   private async fetchItems() {
     try {
       const appsFetch = (await ArasModules.odataFetch("CUI_Application")) as any;
-      this.items = appsFetch.value;
+      this.items = appsFetch.value.map((app: Item) => ({
+        ...app,
+        app_order: app.app_order || 9999,
+      }));
+      this.items.sort((a, b) => (a.app_order! < b.app_order! ? -1 : 1));
     } catch (error) {
       console.error("Error fetching items:", error);
     }
